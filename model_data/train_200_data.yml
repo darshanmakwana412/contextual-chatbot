@@ -1,0 +1,1424 @@
+version: "3.1"
+
+nlu:
+- intent: AddToPlaylist
+  examples: |
+    - add [tune](music_item) to [my](playlist_owner) [mellow bars](playlist) playlist
+    - Add [htoo ein thin](artist) to [my](playlist_owner) [brooklyn beat](playlist) playlist. 
+    - add a [tune](music_item) in [Chill Vibes](playlist)
+    - add this [album](music_item) to [my](playlist_owner) playlist titled [underground hits](playlist)
+    - I want you to add a [George Chisholm](artist) [tune](music_item) to [my](playlist_owner) [40 hits](playlist) playlist. 
+    - add this [karina](artist) [album](music_item) to [my](playlist_owner) [Folk Pop](playlist) playlist
+    - put [Kan Mikami](artist) on [Pre-Party R&B Jams](playlist)
+    - put this [frederick knight](artist) [track](music_item) on [my](playlist_owner) [the midnight hour](playlist) playlist
+    - add the [tune](music_item) to [my](playlist_owner) [jazz vibes](playlist) playlist
+    - Add [tune](music_item) to [downtempo beats](playlist)
+    - Can you add a [tune](music_item) by [natalie macmaster](artist) to [my](playlist_owner) [viajes](playlist) playlist
+    - add [track](music_item) to [This Is Zeze Di Camargo & Luciano](playlist)
+    - Add [artist](music_item) to [laundry](playlist)
+    - put this [song](music_item) on the [Chips and Salsa](playlist) playlist
+    - add [Curse](artist) [song](music_item) to [my](playlist_owner) playlist [Guest List Engadget](playlist)
+    - add [nico](artist) to [my](playlist_owner) [rock to work](playlist)
+    - Add [irving berlin](artist) to [my](playlist_owner) [dishwashing](playlist)
+    - Add to [my](playlist_owner) [Rumba y mas](playlist) playlist the [song](music_item) by [haley scarnato](artist)
+    - add [Dean Martin](artist) [track](music_item) to [metal xplorer](playlist) playlist
+    - add [track](music_item) [Nature Noise](playlist) to [my](playlist_owner) playlist
+    - put [A L Lloyd](artist) on [gaming anthems](playlist)
+    - Put this [tune](music_item) on [my](playlist_owner) [get your mind right](playlist) playlist
+    - Add this [artist](music_item) to [lo mas dance](playlist) playlist.
+    - Please add [Jency Anthony](artist) to [my](playlist_owner) playlist [This Is Mozart](playlist)
+    - Add this [track](music_item) by [Del tha Funkee Homosapien](artist) to the playlist [songs for you, not your parents](playlist)
+    - Add [mc ren](artist) to [my](playlist_owner) [It's a Southern Thing](playlist) playlist
+    - Add a [rachael price](artist) [album](music_item) to [TODO EDM](playlist)
+    - add [song](music_item) to [marta's](playlist_owner) [endorphin rush](playlist) playlist
+    - add this [tune](music_item) by [hart wand](artist) on [this is wagner](playlist)
+    - Add the [song](music_item) to [the martin garrix show](playlist)  playlist
+    - put [donnie g don gorilla](entity_name) on [my](playlist_owner) [classical romance](playlist) playlist
+    - Add [Scarred](entity_name) to [my](playlist_owner) [This Is Zeze Di Camargo & Luciano](playlist)
+    - Add [ilse delange](artist) to [my](playlist_owner) [journey](playlist) playlist
+    - add the [album](music_item) to [my](playlist_owner) [Top 100 Indie Tracks on Spotify](playlist) playlist
+    - add [young maylay](artist) to [Club Hits](playlist)
+    - add the [song](music_item) to [my](playlist_owner) [the funny thing about football is](playlist) playlist
+    - add [share the well](entity_name) to [my](playlist_owner) [epic wall of sound](playlist)
+    - add [this is status quo](playlist) to [teddy riley](artist)
+    - add [track](music_item) to [my](playlist_owner) [global top 50](playlist) 
+    - Put the [frl menke](artist) [song](music_item) in [my](playlist_owner) [comedy top tracks](playlist)
+    - add this [tune](music_item) to [my](playlist_owner) [primavera sound 2016 barcelona](playlist)
+    - Add [Hanging On](entity_name) to [my](playlist_owner) [just dance by aftercluv](playlist) playlist.
+    - Add [Mary Wells Sings My Guy](entity_name) to the [electro sur](playlist) playlist.
+    - rate [tune](music_item) to [my](playlist_owner) [natalie macmaster](artist) [viajes](playlist)
+    - Add [Roots of the Outsiders](entity_name) to [Blues Roots](playlist)
+    - add [157 Riverside Avenue](entity_name) to [leticia's](playlist_owner) [animal humor](playlist) playlist
+    - put [Sungmin](artist) into [my](playlist_owner) [summer](playlist) playlist
+    - please add [moon river](entity_name) to [my](playlist_owner) [metalcore](playlist) playlist
+    - put [Framed](entity_name) onto [my](playlist_owner) [ntc studio sounds](playlist) playlist
+    - Add [lari white](artist) [song](music_item) to [my](playlist_owner) [Soulful Disco](playlist) playlist
+    - add [people take pictures of each other](entity_name) to [Rhythm and Blues](playlist) playlist
+
+    - For playlist [todo latino](playlist) add [Absolutely Sweet Marie](entity_name)
+    - Add [circus](entity_name) to [my](playlist_owner) [Post Garage Wave Revival](playlist) list
+    - Add the [artist](music_item) [jill vidal](artist) to [my](playlist_owner) [Sinfonia Hipster](playlist) playlist
+    - Add some [martine mccutcheon](artist) to [my](playlist_owner) [original columbia jazzmasters](playlist) list
+    - Want to add [pacific ocean blues](entity_name) to the playlist named [lunch](playlist)
+    - Add [artist](music_item) to playlist [Classic Punk](playlist)
+    - add songs [tune](music_item) in [Reggae Infusions](playlist)
+    - Put [jiro](artist) in [my](playlist_owner) [clasicos del hip hop espanol](playlist) playlist. 
+    - Add [christopher lawrence](artist) to [my](playlist_owner) [Always Pop Punk](playlist) playlist. 
+    - add [Eric Bibb](artist) to [Country Coffeehouse](playlist)
+    - add [Francesco De Gregori](artist) to [my](playlist_owner) [classical new releases spotify picks](playlist) playlist
+    - Add this [album](music_item) to [jenifer's](playlist_owner) [mellow dinner](playlist) playlist
+    - add [The Game](artist) to [80'S PARTY](playlist)
+    - add [enduser](artist) [song](music_item) in [grime instrumentals](playlist)
+    - Please add [faccetta nera](entity_name) to [my](playlist_owner) [this is handel](playlist) playlist
+    - Put [Kurt Cobain](artist) onto [korean osts](playlist).
+    - Add [concrete roots](entity_name) to [punk espanol](playlist) playlist
+    - add [song](music_item) by [ian mcdonald](artist) to [an instrumental sunday](playlist) 
+    - add [Volver](entity_name) to [my](playlist_owner) [pop gaming](playlist) playlist
+    - Add [seek & destroy](entity_name) to [Sin Ti](playlist) playlist
+    - add the [tune](music_item) to [my](playlist_owner) [viajes](playlist) playlist
+    - Put the [Love Hurts](playlist) [track](music_item) onto [carmen's](playlist_owner) playlist.
+    - add to [my](playlist_owner) [mac 'n cheese](playlist) playlist with [Tsuzetsu](entity_name)
+    - Add a [song](music_item) by [Jil Y Creek](artist) to [my](playlist_owner) [spring music](playlist)
+    - Add [Sci-Fi Crimes](entity_name) to the [fresh folk](playlist) playlist
+    - add the [album](music_item) by [Cham](artist) to [my](playlist_owner) [Cloud Rap](playlist) playlist
+    - Incorporate [time warp](entity_name) into [my](playlist_owner) [fairy tales](playlist) playlist. 
+    - Add this [track](music_item) by [Brian Welch](artist) to the [spring music](playlist) playlist
+    - Put [Corrina, Corrina](entity_name) onto [my](playlist_owner) [classical x](playlist) list.
+    - Add [jack scott](artist) to [my](playlist_owner) [fantasia](playlist) playlist
+    - add [album](music_item) to [my](playlist_owner) [classical essentials](playlist) playlist
+    - Put [sleeping with ghosts](entity_name) into [my](playlist_owner) [90s Indie](playlist) playlist. 
+    - I want [lay down your arms](entity_name) in the [indie espanol](playlist) playlist. 
+    - add an [album](music_item) in [Sweet Soul Chillout](playlist)
+    - Add a [track](music_item) from [The Edge](artist) to [my](playlist_owner) [funk soul disco](playlist) playlist
+    - Add the [Spirit of Life](entity_name) to [nacao reggae](playlist)
+    - Add a [track](music_item) to the [emo forever](playlist) playlist.
+    - can you put [The Little Grey Mother Who Waits All Alone](entity_name) into [uncharted 4 nathan drake](playlist)
+    - Add [Testifying](entity_name) to  [donna's](playlist_owner) [tokyo rising](playlist) palylist
+    - add [sam sparro](artist) to [my](playlist_owner) playlist called [Beach Vibes](playlist)
+    - Add this [ruth crawford seeger](artist) [song](music_item) to [my](playlist_owner) playlist called [The Soundtrack 007](playlist)
+    - Add a [track](music_item) to [my](playlist_owner) [dinner](playlist) playlist
+    - Add [wes scantlin](artist) [song](music_item) to [my](playlist_owner) [autumn](playlist)
+    - Put [say it ain't so](entity_name) into [my](playlist_owner) [Trap Land](playlist) playlist. 
+    - Add this [song](music_item) to [noreen's](playlist_owner) [fresh finds six strings](playlist)
+    - Add [Omoide wa Okkusenman](entity_name) to [an instrumental sunday](playlist)
+    - Add [First Issue](entity_name) to [my](playlist_owner) [your favorite slaughterhouse](playlist) playlist
+    - Please add the singer [Valery Kipelov](artist) to the [Perfect Concentration](playlist) list
+    - add [zombieland](entity_name) to [Noctambulo](playlist) playlist
+    - Add [Quicksand](entity_name) to [my](playlist_owner) [valentine's day love](playlist) playlist
+    - add this [song](music_item) to [Rock Party](playlist)
+    - put [Hugh Masekela](artist) onto [my](playlist_owner) [Music On Ibiza Guest List](playlist) playlist
+    - add [Annette Artani](artist) to the playlist titled [all out 90s](playlist)
+    - add this [track](music_item) to [my](playlist_owner) [flamenco pa ti](playlist)
+    - I want to add this [bon scott](artist) [song](music_item) to [my](playlist_owner) [Post-grunge](playlist) list
+    - add the [album](music_item) to [my](playlist_owner) [Latin Pop Rising](playlist) playlist
+    - please add [John Deacon](artist) to the [funtime activity](playlist) playlist
+    - I need to add another [track](music_item) to [my](playlist_owner) [cleaning](playlist) playlist. 
+    - put [Pause](entity_name) on [my](playlist_owner) [Dias de Frio](playlist) playlist
+    - Add [house of pain](entity_name) to [my](playlist_owner) [90s Indie](playlist) playlist
+    - Add [tune](music_item) to [infinite indie folk](playlist)
+    - Add some [Beatmaster V](artist) to the [This Is Nicky Jam](playlist) playlist. 
+    - Please add [checkmate](entity_name) to [my](playlist_owner) [irish folk - jigs & reels](playlist) playlist
+    - Put this [artist](music_item) on [instrumental study](playlist) playlist
+    - Add [sugarolly days](entity_name) to [my](playlist_owner) list, [your favorite slaughterhouse](playlist)
+    - Add another [tune](music_item) to [kristine's](playlist_owner) [laundry](playlist) playlist. 
+    - add [Paul Franklin](artist) to [my](playlist_owner) [The Bachelor Party](playlist)
+    - Please add this [track](music_item) to [my](playlist_owner) [weekend](playlist) list
+    - add this [album](music_item) to [Digster Future Hits](playlist)
+    - Add a [song](music_item) to the [para dormir](playlist) playlist.
+    - Add [Deuce](entity_name) to [my](playlist_owner) [listas de exitos](playlist) playlist
+    - I want to put [Land of the Dead](entity_name) into [my](playlist_owner) [Big Daddy's Booze & Blues](playlist) playlist. 
+    - Add [Amir Khan](artist) to [my](playlist_owner) playlist [Acoustic Blues](playlist)
+    - Add [tune](music_item) to [this is trey songz](playlist)
+    - Put a [gary clark](artist) [song](music_item) into the [soul bpm](playlist) playlist. 
+    - Add an [album](music_item) to [Women of Hip Hop](playlist)
+    - add [country favorites willie nelson style](entity_name) to [my](playlist_owner) playlist titled [Spinnin' Records Top 100](playlist)
+    - put this [track](music_item) on [Alok House Party](playlist) playlist
+    - I want to add [Broken Hearted Melody](entity_name) to the playlist [Post Garage Wave Revival](playlist)
+    - Add [tune](music_item) to [cleaning the house](playlist)
+    - go ahead and add [blowfly](artist) to [my](playlist_owner) [This Is Schubert](playlist) list
+    - I want to add [Aprite le finestre](entity_name) to [my](playlist_owner) playlist entitled [This Is Earth, Wind & Fire](playlist)
+    - Add this [tune](music_item) to [This Is Nicky Jam](playlist)
+    - Can [50 minute technicolor dream](entity_name) be added to [meredith's](playlist_owner) [Cierra La Puerta](playlist) playlist?
+    - I want to add [un jour dans notre vie](entity_name) to [my](playlist_owner) list [running to rock 170 to 190 bpm](playlist)
+    - Add another [tune](music_item) to [my](playlist_owner) [Lo mejor del Rock de Espana](playlist) playlist. 
+    - add this [tune](music_item) to [my](playlist_owner) [Rock This](playlist)
+    - add [gina schock](artist) to [workout twerkout](playlist)
+    - add this [Rob Campanella](artist) [tune](music_item) to [psychedelic rock](playlist)
+    - add [jan smit](artist) in [endorphin rush](playlist)
+    - add this [album](music_item) to [my](playlist_owner) [Mediodia Acustico](playlist) playlist
+    - please add this [artist](music_item) to [my](playlist_owner) [Zen Focus](playlist) playlist
+    - add [Devil Pray](entity_name) to [my](playlist_owner) [party](playlist) list
+    - Can you add this [tune](music_item) to the [night out](playlist) playlist?
+    - add [Split the Difference](entity_name) to [my](playlist_owner) [Women's Lit](playlist) playlist
+    - Add [artist](music_item) to [Latin Pop Hits](playlist)
+    - add [Curious corn](entity_name) to [Wild & Free Workout](playlist)
+    - Add [Eef Barzelay](artist) to the [Trad Folk](playlist) playlist. 
+    - I want to add another [album](music_item) to the [Scratchy Back Porch Blues](playlist) playlist. 
+    - Please include [danni bassan](artist) in [my](playlist_owner) [Perfect Concentration](playlist)
+    - I want [novena on a nocturn](entity_name) added to the playlist called [Gold Edition](playlist)
+    - add [a shot at glory](entity_name)  to [calm before the storm](playlist)
+    - add [Love Story wa Totsuzen ni](entity_name) to [the martin garrix show](playlist) playlist
+    - Can the [artist](music_item) [big mama thornton](artist) be put onto [my](playlist_owner) [Trabajo Relax](playlist) playlist?
+    - Add [The Blurred Crusade](entity_name) to [crate diggers anonymous](playlist)
+    - Add [Take Me Back to Dear Old Blighty](entity_name) to [my](playlist_owner) [dinner](playlist) playlist
+    - Add [the unraveling](entity_name) to [marina's](playlist_owner) playlist [It's a Southern Thing](playlist)
+    - Add this [tetsuya komuro](artist) [track](music_item) to [my](playlist_owner) [soulful disco](playlist) playlist
+    - Add this [track](music_item) to the [Evening Commute](playlist) playlist
+    - I'd like [johnny nash](artist) to be put into [my](playlist_owner) playlist [Always Pop Punk](playlist)
+    - add [licorice mckechnie](artist) to [just dance by aftercluv](playlist)
+    - put [live and rare](entity_name) into [dancehall official](playlist)
+    - add [Sirusho](artist) to the [50 Clasicos](playlist) playlist
+    - add this [song](music_item) to [clarice's](playlist_owner) [latino caliente](playlist) playlist
+    - Add this [song](music_item) to [my](playlist_owner) [fairy tales](playlist)
+    - please put [live with me](entity_name) onto [my](playlist_owner) playlist named [CARaCTER LATINO](playlist)
+    - add [Troy Andrews](artist) to [my](playlist_owner) [pop punk powerhouses](playlist)
+    - add this [Candi Staton](artist) [artist](music_item) to [my](playlist_owner) [Dancefloor Hits](playlist)
+    - I want more [francis healy](artist) in the [Rockin' Vibes](playlist) playlist. 
+    - Place this [tune](music_item) in [workout remix](playlist)
+    - add [eric moo](artist) to [women of jazz](playlist)
+    - Add the [song](music_item) to [my](playlist_owner) [R&B Movement](playlist) playlist.
+    - Add to [ila's](playlist_owner) playlist [A Mi Manera Recopilatorio](playlist) the name [my heart stood still](entity_name)
+    - add this [song](music_item) to [my](playlist_owner) [metal](playlist) playlist
+    - Add a [tune](music_item) to [patrica's](playlist_owner) playlist, [The Rhythm](playlist)
+    - Can this [song](music_item) get added to [lunchtime](playlist)?
+    - add [keltech](artist) to [my](playlist_owner) [70s road trip](playlist) playlist
+    - Add [wastedagain](entity_name) to the [wild & free workout](playlist) playlist
+    - Add [robin s](artist) to [sxsw latin](playlist)
+    - I want to add something by [Jarvis Cocker](artist) to [my](playlist_owner) [rock espanol](playlist) playlist
+    - add [Jacob Hoggard](artist) to [my](playlist_owner) [get going](playlist) playlist
+    - I want to add [No Mystery](entity_name) to [alejandra's](playlist_owner) [Acoustic Love](playlist) playlist
+    - Add [ana carolina](artist) to [chill](playlist)
+    - Add another [tune](music_item) to [my](playlist_owner) [Trance Life](playlist) playlist. 
+    - Add [O B McClinton](artist) to [my](playlist_owner) playlist called [Women of Electronic](playlist)
+    - add [Diarios de Bicicleta](playlist) to [my](playlist_owner) [la la](entity_name) playlist
+    - add [heresy and the hotel choir](entity_name) to the [evening acoustic](playlist) playlist
+    - Add [tune](music_item) to [Genuine R&B](playlist)
+    - add [song](music_item) to [Sleepytime](playlist)
+    - add [Metal Church](entity_name) to [my](playlist_owner) playlist named [Stress Relief](playlist)
+    - Add this [tune](music_item) to [my](playlist_owner) [Rockabilly Mania](playlist)
+    - Please put another [tune](music_item) into the [laundry](playlist) playlist. 
+    - add [Paper Doll](entity_name) to the [Power Walk](playlist) playlist
+    - Add an [album](music_item) by [cowboy troy](artist) to [my](playlist_owner) [piano in the background](playlist) playlist.
+    - Add a [gackt camui](artist) [track](music_item) to the [White Noise](playlist) playlist. 
+    - add [Yameen](artist) to the [uncharted 4 nathan drake](playlist) playlist
+    - Add the singer [Damon Johnson](artist) [album](music_item) to [my](playlist_owner) [African Heat](playlist) playlists
+    - add this [song](music_item) to the [Top 100 Indie Tracks on Spotify](playlist) playlist
+    - Can you add a [track](music_item) to [my](playlist_owner) [Spain Top 50](playlist) playlist
+
+- intent: BookRestaurant
+  examples: |
+    - Book a table for [april twenty-second](timeRange) at a [pub](restaurant_type) which serves [creole](cuisine)
+    - Book the [Chapter One](restaurant_name) in [Bosnia and Herzegovina](country) for [patti, hester richardson and camille](party_size_description)
+    - I need a [restaurant](restaurant_type) for a party of [three](party_size_number)
+    - I need a party of [4](party_size_number) to get a table reserved at a [pub](restaurant_type) with [southeastern](cuisine) cuisine.
+    - Please reserve a table for [five](party_size_number) to get [chicken fingers](served_dish) at a [cafeteria](restaurant_type) in [Mexico](country).
+    - Book a reservation for [seven](party_size_number) people at a [steakhouse](restaurant_type) in [Kenya](country)
+    - book a [restaurant](restaurant_type) for [5](party_size_number)
+    - Book a reservation for a [southern brazilian](cuisine) [restaurant](restaurant_type) for [10](party_size_number) people [within walking distance](spatial_relation) of [Broadway-Lafayette St](poi)
+    - I'd like to go to a [pizzeria](restaurant_type) [within walking distance](spatial_relation) of [Hutchinson](city)
+    - Book a reservation for [2](party_size_number) at a [food truck](restaurant_type) with [pool](facility) in [New York](state)
+    - Reserve a table for [nine](party_size_number) people at a [caribbean](cuisine) [restaurant](restaurant_type) in [White Creek](city), [Utah](state).
+    - Find a reservation at a [restaurant](restaurant_type) that serves [gougere](served_dish) in [Laneville](city) with a party of [nine](party_size_number)
+    - book a spot at a [highly rated](sort) [afghan](cuisine) [restaurant](restaurant_type)
+    - I'd like a table for [my step grandfather and I](party_size_description) at [Five Fifty-Five](restaurant_name) in [NV](state)
+    - Book a table for [6](party_size_number) at a [restaurant](restaurant_type) in [Pershing Square, Manhattan](restaurant_name) at [two am](timeRange)
+    - I want to find [parking](facility) next to a [restaurant](restaurant_type) for [10](party_size_number)
+    - I have [six](party_size_number) people who would like to eat at a [cafe](restaurant_type) that serves [american chinese cuisine](served_dish) in [TX](state).
+    - I want to eat for [two](party_size_number) at a [brasserie](restaurant_type) in [Gwynedd Valley](city) [TN](state) with [pickled cucumber](served_dish) [in one second](timeRange) 
+    - I need a dinner reservation [in three months](timeRange) for a [restaurant](restaurant_type) in [Hills and Dales](city).
+    - Book a table at [Central Grocery](restaurant_name) on [Mar. 22nd, 2020](timeRange)
+    - Book a reservation for [bettye and lakeisha jimenez](party_size_description) at a [bar](restaurant_type)
+    - book for [six](party_size_number) for [1 hour and 1 minute from now](timeRange)
+    - need a table at a [restaurant](restaurant_type) serving [foie gras](served_dish) on [halloween](timeRange) for [two](party_size_number) at [Northern Mariana Islands](state)
+    - Book [The Oriel](restaurant_name) in [Allison](city) for a party of [four](party_size_number).
+    - book a [brasserie](restaurant_type) with [internet](facility) fascility for [5](party_size_number) [in a year ](timeRange) in [Oklahoma](state)
+    - Book a [northeastern brazilian](cuisine) [restaurant](restaurant_type) for [10 am](timeRange)
+    - [restaurant](restaurant_type) in [Watauga](city) for [me and my aunt](party_size_description)
+    - Book a [popular](sort) [restaurant](restaurant_type) for [two](party_size_number) which is [distant](spatial_relation) from [Avalon](poi).
+    - I need a reservation for [ten](party_size_number) in [Wisconsin](state)
+    - I want to book an [indoor](facility) [brasserie](restaurant_type) [within walking distance](spatial_relation) in [ME](state).
+    - I need to get a [restaurant](restaurant_type) reserved in [SD](state).
+    - book a [restaurant](restaurant_type) [163 days from now](timeRange)
+    - I'd like to book at a place in [AR](state), looking for an [oyster bar](restaurant_type) that is [indoor](facility) and can accommodate a party of [eight](party_size_number) that is also [within walking distance](spatial_relation).
+    - book a [meal](timeRange) for [four](party_size_number) in [DC](state)
+    - book a table for [three](party_size_number) at [0 am](timeRange) at a [bar](restaurant_type) with [wifi](facility) in [Schuyler Lake](city)
+    - I want to book [Dinner by Heston Blumenthal](restaurant_name) in [AL](state).
+    - I need to find a [restaurant](restaurant_type) for [ten](party_size_number) people at [twelve am](timeRange) in [Liechtenstein](country).
+    - I need to reserve [two](party_size_number) seats to eat at in [Salina](city), [Alabama](state).
+    - I want to eat a a [brasserie](restaurant_type) that serves [muffuletta](served_dish), where can I get a reservation?
+    - book spot at a [balinese](cuisine) [joint](restaurant_type)
+    - Please book a [restaurant](restaurant_type) for [nine](party_size_number) members on [august 25](timeRange) in [DC](state)
+    - I need a table at a [cafeteria](restaurant_type) for a party of [6](party_size_number) in [AL](state)
+    - Book reservations at a [nearby](spatial_relation) [restaurant](restaurant_type) in [Montenegro](country) for [four](party_size_number) people
+    - [me and my grandmother](party_size_description) want to eat [umbrian](cuisine) food on [January the 7th](timeRange) at a [brasserie](restaurant_type).
+    - Book a table at a [faraway](spatial_relation) [brasserie](restaurant_type) in [NJ](state).
+    - My group of [seven](party_size_number) wants to eat at [Yogurt Mountain](restaurant_name) in [Slick](city) [tonight](timeRange).
+    - Book [Mars 2112](restaurant_name) in [Rwanda](country) for [4](party_size_number) people.
+    - book a [molecular gastronomy](served_dish) serving [restaurant](restaurant_type) on [march the 20th](timeRange)
+    - book a table in the [United States](country) for [10](party_size_number) at [The Berghoff](restaurant_name)
+    - book a spot for [9](party_size_number) [in thirty three days](timeRange)  at [Ringlestone Inn](restaurant_name) [close](spatial_relation) to [Grenada](country)
+    - Book a reservation for a [bistro](restaurant_type)
+    - i need to book a table for [three](party_size_number) in [Lesotho](country)
+    - book a [highly rated](sort) place in [IN](state) [in seven years ](timeRange) at a [pub](restaurant_type)
+    - I need to book a table at a [fast food](restaurant_type) spot that serves [slinger](served_dish) in [PR](state)
+    - book an [australian](cuisine) [restaurant](restaurant_type) in [Moldova](country)
+    - Get me a table for [3](party_size_number) [within walking distance](spatial_relation) from my hotel in [Tajikistan](country).
+    - book a spot for [2](party_size_number) at a [brasserie](restaurant_type) that has [hot dog](served_dish) in [WA](state) at [twelve AM](timeRange)
+    - I need a table in [neighboring](spatial_relation) [Carencro](city) at the [Bridge Round House](restaurant_name)
+    - [hannah lewis and chelsea](party_size_description) want to go to a [cafe](restaurant_type) in [Botswana](country) on [Apr. the seventeenth, 2024](timeRange)
+    - [in eight seconds](timeRange), I'd like reservations at a [food court](restaurant_type) that serves [sardinian](cuisine) food in [Pidcoke](city).
+    - in [Delanson](city) [1 hour from now](timeRange) reserve a table for [four](party_size_number)
+    - [charlene and I](party_size_description) and are are in [Liechtenstein](country) and want [restaurant](restaurant_type) reservations at [midnight](timeRange).
+    - I'd like a table for [natasha, bettye and kimberley](party_size_description) at a [coffeehouse](restaurant_type) with a [smoking room](facility)
+    - book a [mexican](cuisine) [brasserie](restaurant_type) [close by](spatial_relation) [Woodcliff Lake](poi) for a party of [7](party_size_number) on [April 25, 2026](timeRange)
+    - book a [churrascaria](restaurant_type) in [Macao](country) on [May the twenty-third](timeRange)
+    - I need a table for [six](party_size_number) at a [bar](restaurant_type) that serves [varenyky](cuisine)
+    - I want to book a [restaurant](restaurant_type) for [6](party_size_number) on [january third](timeRange) [within walking distance](spatial_relation) of [Northvale](poi)
+    - Book a [restaurant](restaurant_type) in [Swaziland](country) [in 1 hour](timeRange).
+    - I want to book the [Clarke Cooke House](restaurant_name) in [Uzbekistan](country)
+    - i'd like reservations for [two](party_size_number) at a [pizzeria](restaurant_type), [22 weeks from now](timeRange).
+    - Book a reservation for [Thomas Hynes House](restaurant_name) on [jan. the third](timeRange) in [Netherlands](country)
+    - I need to take [three](party_size_number) people to eat
+    - Book a [restaurant](restaurant_type) in [Donnelly](city)
+    - I want to book a [restaurant](restaurant_type) for [a year from now](timeRange) in [Maine](state).
+    - book a [restaurant](restaurant_type) table at the [food court](restaurant_type) in the [spa](facility) [sixteen hours from now](timeRange)
+    - Book a [restaurant](restaurant_type) [2 months from now](timeRange) for [seven](party_size_number) people in [New Caledonia](country).
+    - book a spot at [Colony](restaurant_name)
+    - I'd like to go to a [cuban](cuisine) [restaurant](restaurant_type) in [Horatio](city) and get a table for [1](party_size_number)
+    - book in [Vermont](state) at [The Maisonette](restaurant_name)
+    - I would like to book a [tea house](restaurant_type) at [08:05](timeRange)
+    - Book me a [restaurant](restaurant_type) where I can get a [burrito](served_dish)
+    - book at table at [Forest Av](poi) [restaurant](restaurant_type) [close-by](spatial_relation) for [2](party_size_number) [1 second from now](timeRange)
+    - [21 weeks from now](timeRange) [elinor, crystal turner and nita](party_size_description) want to eat [german](cuisine) food at a [bar](restaurant_type) in [distant](spatial_relation) [California](state)
+    - I need to book a [tropezienne](served_dish) [restaurant](restaurant_type) [six hours from now](timeRange)
+    - Book a [restaurant](restaurant_type) for [9](party_size_number) people.
+    - Book a table for [six](party_size_number) at [The Cherry Street Tavern](restaurant_name) for [January sixteenth, 2024](timeRange)
+    - book a spot for [7](party_size_number) at an [outdoor](facility) [food court](restaurant_type) in [Denmark](country)
+    - book a spot for [me and my sister](party_size_description) at a [restaurant](restaurant_type) that has [clafoutis](served_dish)
+    - book a [restaurant](restaurant_type) in [Clawson](city), [MS](state) for [one](party_size_number)
+    - Can you get me seating for a party of [4](party_size_number)
+    - set an reservation for a party of [eight](party_size_number) at the [bar](restaurant_type) on [8/8/2039](timeRange)
+    - book a spot for [ten](party_size_number) in [Upper Marlboro](city) [PR](state)
+    - book a [tavern](restaurant_type) on [lincoln's birthday/lincoln's day](timeRange)
+    - I need a table for [one](party_size_number)
+    - Book the [Bobcat Bite](restaurant_name) in the [Isle of Man](country) for [6](party_size_number) people.
+    - book a table for [eight](party_size_number) in [Graf](city) [far](spatial_relation) away
+    - Book a table at a [french](cuisine) [restaurant](restaurant_type) for [fern and I](party_size_description)
+    - I'm looking for a [churrascaria](restaurant_type) place with [wifi](facility) that can serve a party of [five](party_size_number).
+    - book a spot at a [pub](restaurant_type) with [tatar](cuisine) in [Cambodia](country)
+    - book a [bar](restaurant_type) in [San Marino](country) for [five](party_size_number)
+    - I need a reservation for a party of [ten](party_size_number) in [Algeria](country).
+    - Book a [restaurant](restaurant_type) for [eight](party_size_number) people [in six years](timeRange)  .
+    - book a spot for [one](party_size_number)
+    - book a spot at a [steakhouse](restaurant_type) with [internet](facility)
+    - Reserve a table for [ten](party_size_number) people in [Brenham](city) [in 5 years](timeRange) .
+    - Book a [bistro](restaurant_type) in [New Zealand](country) [in 119 and a half days](timeRange).
+    - Can I get a table at [The Fort](restaurant_name)?
+    - [restaurant](restaurant_type) in [Niger](country) for [my mom and I](party_size_description)
+    - book a table at a [restaurant](restaurant_type) for [10/24/2028](timeRange) for [me and lauren](party_size_description)
+    - Please find me a table at a place that serves [glace](served_dish), has room for [six](party_size_number) and a [pub](restaurant_type) atmosphere
+    - Find a table at a [bar](restaurant_type) for [milagros and I](party_size_description) in [Mount Pocono](city)
+    - book a [gastropub](restaurant_type) that serves [pansette](served_dish) in [Skaneateles](city), [Pennsylvania](state)
+    - book a spot for [9](party_size_number) in [New Mexico](state)
+    - Book a table for [four](party_size_number) around [midnight](timeRange) in [Saint Pierre and Miquelon](country).
+    - Book me a table for [one](party_size_number) at [Blue Ribbon Barbecue](restaurant_name)
+    - Book a [restaurant](restaurant_type) for [one](party_size_number) in [AL](state).
+    - Make me a reservation for a party of [six](party_size_number) at [The K Club](restaurant_name) on [feb. 7th](timeRange)
+    - Find me a table for [8](party_size_number) somewhee in [Hollenberg](city) [in nine weeks](timeRange) 
+    - I need a reservation for the [Oasis Drive-In](restaurant_name) for a party of [four](party_size_number)
+    - I have a party of [10](party_size_number) that would like to eat [outdoor](facility) at a [tavern](restaurant_type).
+    - Please book a [coffeehouse restaurant](restaurant_type) type room to accommodate [gretchen, trisha and amber](party_size_description) which serves [pastelaria](cuisine) dish
+    - I need to reserve a seat for [one](party_size_number) in [SD](state) at a [brasserie restaurant](restaurant_type).  
+    - Book a [restaurant](restaurant_type) with [wifi](facility) for [nine](party_size_number) people.
+    - I need to book the [Beardslee Castle](restaurant_name) in [Albania](country) for [me, cassie and lesley](party_size_description)
+    - Book me a reservation for [Ad Hoc](restaurant_name) in [Brazil](country) for a party of [7](party_size_number)
+    - book a [brasserie](restaurant_type) with a [pool](facility) [within the same area](spatial_relation) as my [neighborhood](poi) for [5](party_size_number) people at [19:26](timeRange)
+    - I want to book a [restaurant](restaurant_type) for [nine](party_size_number) with [wifi](facility)
+    - on [April the twenty-seventh, 2022](timeRange), I'd like to make reservations at a [spanish](cuisine) [diner](restaurant_type).
+    - need a table at a [highly rated](sort) [south tyrolean](cuisine) [joint](restaurant_type)
+    - Book a [bakery](restaurant_type) at [zero o'clock](timeRange) for [5](party_size_number) people.
+    - book a [restaurant](restaurant_type) in [Puerto Rico](state)
+    - I need to book a table at [The Star Inn](restaurant_name) that's [within walking distance](spatial_relation) from my place in [Ashland](city)
+    - Book a [restaurant](restaurant_type) with a [pool](facility) with [alta, deborah and bertha](party_size_description) in [IA](state).
+    - I want a reservation for [11:16:07](timeRange) at [The Fort](restaurant_name) in [South Carolina](state).
+    - Book a [restaurant](restaurant_type) in [Pinecliffe](city) [Missouri](state) [this month](timeRange).
+    - Book a [pub](restaurant_type) for [two](party_size_number) on [jan. first, 2037](timeRange).
+    - I'd like to go to a [halal](cuisine) [restaurant](restaurant_type) [in twenty minutes](timeRange) [around](spatial_relation) the [District Of Columbia](state) and book seats for [four](party_size_number)
+    - Book a reservation at a [restaurant](restaurant_type) with [me, matilda and deana](party_size_description)
+    - Find a reservation for [three](party_size_number) in [Ansonia](city) [MI](state)
+    - table for [1](party_size_number) please
+    - I need to book the [best](sort) [food court](restaurant_type) in [within the same area](spatial_relation) as [OK](state) that serves [persian](cuisine) food for [my ex husband and I](party_size_description)
+    - Book a [popular](sort) [brasserie](restaurant_type) in [Roads End](city)
+    - book a [restaurant](restaurant_type) on [next fall](timeRange)  for [5](party_size_number)
+    - Find a reservation at the [Roseland Theater](restaurant_name) at [10 pm](timeRange)
+    - book [Guenther House](restaurant_name) for [6](party_size_number) on [Oct. 24, 2035](timeRange) in [Waddy](city)
+    - Lets go [far](spatial_relation) to [The Wolseley](restaurant_name) in [Maine](state)
+    - book a [sushis](served_dish) serving [restaurant](restaurant_type) in [Uzbekistan](country)
+    - Book a table for [my granddaughter and I](party_size_description) at the [highly rated](sort) [restaurant](restaurant_type) that is [close by](spatial_relation) in [Tuvalu](country).
+    - I want to eat at a [food truck](restaurant_type) [this week](timeRange) with [my colleague and I](party_size_description)
+    - Book a [restaurant](restaurant_type) in the [Maldives](country) [in one second](timeRange).
+    - Book a reservation for a [taverna](restaurant_type) at [Sunrise](timeRange) in [Kaanapali](city)
+    - book a spot for [ten](party_size_number) at a [top-rated](sort)  [caucasian](cuisine) [restaurant](restaurant_type) [not far](spatial_relation)  from [Selmer](city)
+    - Book a table for [nine](party_size_number) at [Canteen Lunch in the Alley](restaurant_name) at [Midnight](timeRange)
+    - I want to bring [four](party_size_number) people to a place that's [close](spatial_relation) to [downtown](poi) that serves [churrascaria](restaurant_type) cuisine. 
+    - Reservea  table for [five](party_size_number) people on [september second](timeRange) in [Gabon](country).
+    - Book a reservation at a [restaurant](restaurant_type) [nearby](spatial_relation) [their airbnb](poi)
+    - book a [gibassier](served_dish) serving [tavern](restaurant_type) in [Vermont](state) for [nine](party_size_number)
+    - Book a [restaurant](restaurant_type) that serves [pasta](served_dish) for [5](party_size_number) people.
+    - book a spot for [9](party_size_number) at [The Counter](restaurant_name)
+    - I need a table for [five](party_size_number) in [Viroqua](city)
+    - book a spot for [krista, yolanda and I](party_size_description) in [New Mexico](state)
+    - Book a [restaurant](restaurant_type) with a [pool](facility) [far](spatial_relation) from [robbie's hostel](poi) for [me, chandra and noelle](party_size_description) at [nine PM](timeRange).
+    - I would like to book a [donut](served_dish) serving [delicatessen](restaurant_type) in [Cuba](country) for [5](party_size_number) on [april eleventh](timeRange)
+    - Please book a [restaurant](restaurant_type) in [Village Green](city), [CA](state).
+    - I have a party of [four](party_size_number) in [Japan](country) and need a reservation at [Rimsky-Korsakoffee House](restaurant_name) on [Aug. the 3rd](timeRange).
+    - Book a reservation for [seven](party_size_number) people at a [bar](restaurant_type) in [Kentucky](state)
+    - I want a [restaurant](restaurant_type) reservation for a party of [8](party_size_number) at a [vegetarian](cuisine) [tea house](restaurant_type).
+    - book me a [restaurant](restaurant_type) in [Guadeloupe](country)
+    - book a spot at the [food truck](restaurant_type) in [MA](state)
+    - Book a table for [1](party_size_number) on [November the first, 2022](timeRange)
+    - book a [restaurant](restaurant_type) for [4](party_size_number) of us
+    - book a table for [one](party_size_number) in a [bar](restaurant_type) serving [saucisse](served_dish) for [meal](timeRange) in [Calistoga](city) [CO](state)
+    - book a [restaurant](restaurant_type) [close](spatial_relation) to [Grant Av](poi)
+    - Book a table at an [indoor](facility) [restaurant](restaurant_type) [now](timeRange).
+    - I need a reservation, looking for a place with [pool](facility) at [Midnight](timeRange) in a [pub](restaurant_type).
+    - Book a table at a [cuban](cuisine) [pub](restaurant_type) for [5 pm](timeRange) for a party of [7](party_size_number) in [Virginia](state).
+    - I want to eat [panisses](served_dish) the [nearby](spatial_relation) [cafeteria](restaurant_type) in [Naytahwaush](city)
+    - Book a table for [2](party_size_number) at a [FM](state) [restaurant](restaurant_type) serving [grits](served_dish) for the next [meal](timeRange).
+    - Book a table for [ten](party_size_number) people at a [restaurant](restaurant_type) which serves [snack](served_dish).
+    - I want to eat [close](spatial_relation) to [Bowlegs](city) [seven years from now](timeRange)
+    - I have [four](party_size_number) people needing a [restaurant](restaurant_type) reservation.
+    - Reserve me seating [midday](timeRange) at [Bear Hotel](restaurant_name)
+    - [pizzeria restaurant](restaurant_type) in [Kellnersville](city) [HI](state) that is [outdoor](facility) for [ten](party_size_number)
+    - [stacy watson and adriana](party_size_description) want to go to the [best](sort) [osteria](restaurant_type) in [Hallowell](city) [Minnesota](state) this [afternoon](timeRange)
+    - I need a [restaurant](restaurant_type) in [Iowa](state) for [0 o'clock](timeRange)
+    - Book an [indoor](facility) [restaurant](restaurant_type) [near](spatial_relation) [Wallington](poi) for [2](party_size_number)
+    - I want to book a [restaurant](restaurant_type) [far](spatial_relation) from the [Municipal Borough of Mitcham](poi) for [10](party_size_number) people.
+    - I need to find a [restaurant](restaurant_type) in [PW](state).
+    - I'd like a table for [3](party_size_number) at a [brasserie](restaurant_type) in [Hillview](city) [NE](state) that has [mineiro](cuisine)
+    - book me [top-rated](sort) [restaurant](restaurant_type) for [9](party_size_number) members for [midnight](timeRange) at [Fair Bluff](city) [RI](state)
+    - I need a table at [Eddie's Attic](restaurant_name) in [Nevada](state) for [one](party_size_number)
+    - Reserve a table for [teresa and elnora](party_size_description) at a [fast food joint](restaurant_type) which serves [fish and chips](served_dish)
+    - Book restaurnt at [N9NE Group](restaurant_name) in [Loogootee](city) [UT](state)
+    - Book the [Boon Brick Store](restaurant_name) for [nine](party_size_number) people.
+    - Book a spot for [nine](party_size_number) at [The Cubby Bear](restaurant_name) in [Luxor](city)
+    - I'd like seats for [ten](party_size_number) at a [highly rated](sort) [brasserie](restaurant_type) in [Kyrgyzstan](country)
+    - I need reservations at [Khedive Palace](restaurant_name) that's [close](spatial_relation) [in town](poi).
+    - I want to book a [restaurant](restaurant_type) [not far](spatial_relation) from [our college](poi).
+    - Book a table for [nine](party_size_number) people at a [brasserie](restaurant_type) on [Jan. 16, 2034](timeRange)
+    - Book a reservation for [4](party_size_number) at a [bar](restaurant_type) serving [corn relish](served_dish)
+
+- intent: GetWeather
+  examples: |
+    - What's the weather forecast for [New Zealand](country)?
+    - Will it [storm](condition_description) in [Texola](city), [Delaware](state)
+    - Will there be alot of [wind](condition_description) on [March 13th](timeRange) in [Lost Creek](city) [Bahrain](country)
+    - What's the weather in [Parthenon](city)
+    - Tell me if it'll be [rainy](condition_description) [here](current_location) on [Dec. the 25th, 2033](timeRange)
+    - What's the weather going to be like [around](spatial_relation) [Lewis and Clark Trail](geographic_poi) [sixteen hours from now](timeRange)?
+    - Is there a [blizzard](condition_description) in [Stonewood](city)?
+    - Will it be [chilly](condition_temperature) at [4](timeRange) in [Druid Hills](city) [AMerican Samoa](country)
+    - Will there be a [snowstorm](condition_description) in [Slick](city), [OR](state) [four hours from now](timeRange)?
+    - How's the weather in [Grisdale](city), [Bangladesh](country)?
+    - Weather [within the same area](spatial_relation) as [Qatar](country) at [four](timeRange)
+    - Tell me if it'll be [humid](condition_description) at [eighteen o'clock](timeRange) in my [current spot](current_location)
+    - What's the weather in [La Pine](city)
+    - What is the weather forecast [in six weeks](timeRange) in [LA](state)
+    - Will it be [windy](condition_description) in [Tequesta](city)?
+    - Will it be [warm](condition_temperature) in [Gilmer](city), [Keeling Islands](country)?
+    - Will it be [cold](condition_temperature) in [Boyertown](city) [New Zealand](country) [in eighteen hours](timeRange) 
+    - What will the weather be in [Stelvio National Park](geographic_poi) [1 hour and 1 minute from now](timeRange)?
+    - What's the weather forecast for [Sidnaw](city) at [20 o'clock](timeRange)? 
+    - Give me the weather forecast for [here](current_location). 
+    - what is the weather forecast for [close-by](spatial_relation) [GU](state) [3 years from now](timeRange)
+    - show weather forcast for [February the 8th](timeRange) on [current spot](current_location) in [neighboring](spatial_relation)
+    - Tell me the weather forecast for my [current spot](current_location) [1 minute from now](timeRange)
+    - What is the forecast for [Harrison-Crawford State Forest](geographic_poi)
+    - What's the weather in [Stone Mountain](city) [Kentucky](state)
+    - Will there be [rain](condition_description) [next year](timeRange) in [New Hampshire](state)?
+    - Will it feel nicer in [Finland](city) or [New Mexico](state) [today](timeRange)
+    - what will the weather be [in four weeks](timeRange) [around](spatial_relation) [Tsingy de Bemaraha Strict Nature Reserve](geographic_poi)?
+    - Tell me the weather forecast [faraway](spatial_relation) from [TX](state)
+    - check the weather for around [nine](timeRange) in [South Georgia and the South Sandwich Islands](country)
+    - show weather forcast [here](current_location) at [19](timeRange)
+    - Will it be [freezing](condition_temperature) in the city of [Sardis](city)
+    - Will it get [windy](condition_description) [close](spatial_relation) by [here](current_location)?
+    - What is the weather forecast for [Siler City](city) [Russia](country)
+    - [United States](country) has [warm](condition_temperature) weather on [next Wed.](timeRange)
+    - What is the weather for [Charlotte Hall](city) [Saint Kitts and Nevis](country)
+    - How [warm](condition_temperature) is it in [Darnestown](city)
+    - Is it going to be [cloudy](condition_description) in my [current spot](current_location) for [dinner](timeRange)?
+    - Will it be [hot](condition_temperature) in [Saint Jo](city) [Alaska](state)
+    - When will it be [chillier](condition_temperature) than [now](timeRange) in [South Paris](city) in [CT](state)
+    - what will the weather be in [Double Oak](city) at [12 am](timeRange)
+    - What is the weather forecast for [Midnight](timeRange) in [DC](state)?
+    - What will the weather be like [tonight](timeRange) at [Greenfoot Quarry](geographic_poi)
+    - What will the weather be like [in 15 and a half weeks](timeRange) in [China](country)
+    - what is the forecast for [here](current_location)
+    - what is the forecast for [hot](condition_temperature) at [ten o'clock](timeRange) in [Idaho](state)
+    - will it [rain](condition_description) [today](timeRange) in [French Southern Territories](country) of [Highland Beach](city)
+    - Will there be [wind](condition_description) in [AS](state)
+    - need a table [now](timeRange) somewhere [nearby](spatial_relation) [Petit Manan National Wildlife Refuge](geographic_poi)
+    - Tell me when it'll be [sunny](condition_description) in [Ralls](city), [Marshall Islands](country)
+    - What is the [Wauseon](city) forecast
+    - How is the weather in [OH](state)?
+    - Will it be [warmer](condition_temperature) [1 minute from now](timeRange) at [Farmington Canal State Park Trail](geographic_poi)
+    - Will there be a lot of [wind](condition_description) in [West Fargo](city) [GU](state)
+    - what is the [temperate](condition_temperature) in [Uzbekistan](country)
+    - What's the weather forecast in [Guadeloupe](country) [eleven weeks from now](timeRange)? 
+    - is it going to be [chilly](condition_temperature) on [12/13/2025](timeRange) in [Haugan](city) [Pakistan](country)
+    - Will there be a [blizzard](condition_description) at [seven](timeRange) in [Colorado](state)
+    - Give me the weather forecast for the city of [Archie](city)
+    - What's the weather in [Timbo](city)?
+    - Will it be [warmer](condition_temperature) in my [current position](current_location) 
+    - How much [fog](condition_description) is there in [Tarpon Springs](city)?
+    - What's the weather in [Swift River Reservation](geographic_poi)
+    - Will there be a [blizzard](condition_description) at [2 am](timeRange) in my [current place](current_location)
+    - What is the forecast for [march the twelfth](timeRange) [faraway](spatial_relation) from [Pine Mountain State Resort Park](geographic_poi)
+    - What is the weather like in [Colorado](state)?
+    - Is it [warm](condition_temperature) [here](current_location) [now](timeRange)?
+    - What's the weather forecast for [Baker City](city)?
+    - Will the weather be the [same](spatial_relation) [here](current_location) [in one week](timeRange) [in the same area](spatial_relation)
+    - what is the forecast for [Sea Isle City](city) in [Louisiana](state) for [warmer](condition_temperature) weather
+    - Will it be [freezing](condition_temperature) on [4/20/2038](timeRange) in [AMerican Beach](city) [NC](state)
+    - what is the weather of [East Portal](city) [KS](state)
+    - what is the [Currituck National Wildlife Refuge](geographic_poi) forecast for [chilly](condition_temperature) conditions
+    - Is it [hot](condition_temperature) in [Gold Beach](city), [Bahrain](country)? 
+    - What will the weather be in [Nationalpark Rila](geographic_poi) on [Nov. 25](timeRange)?
+    - what is the forecast in [Bearmouth](city) in [Virgin Islands](state) [in 3 months](timeRange) 
+    - Book a restaurant [1 hour from now](timeRange) in [Dorchester Shores Reservation](geographic_poi)
+    - What's the weather in [Castle](city) at [17:43](timeRange)
+    - What is going on with the weather [far](spatial_relation) from my [current location](current_location)
+    - What will the weather be like at my [current spot](current_location) on [january the 19th](timeRange)
+    - Will it get [windy](condition_description) in [Ocean Breeze Park](city)?
+    - Is it [hotter](condition_temperature) [here](current_location)
+    - What will the weather forecast be in [Mount Victory](city), [Delaware](state) [in 1 second](timeRange)?
+    - Will it be [warm](condition_temperature) in [Kipp](city) [Rhode Island](state) [one hour and 9 seconds from now](timeRange)?
+    - Will there be a [depression](condition_description) [here](current_location) on [october 26](timeRange)
+    - What is it like on [7/10/2023](timeRange) in the [current place](current_location)
+    - Will there be a [blizzard](condition_description) in [Egypt](country) on [Jul. 3](timeRange)?
+    - Will it [storm](condition_description) in [Charles Pinckney National Historic Site](geographic_poi)
+    - Is there a lot of [sun](condition_description) in [Qatar](country)?
+    - will it be [stormy](condition_description) in [Saint Pierre and Miquelon](country) in the city of [Wenham](city)
+    - What's the weather in [Paris](city)?
+    - What's the weather forecast for [Anniston](city)?
+    - Is it [humid](condition_description) in [Kuwait](country)
+    - Is it [cold](condition_temperature) in [North Carolina](state)
+    - Tell me if it'll be [snowy](condition_description) in [Coastal Landscape Park](geographic_poi) on [october 2, 2027](timeRange)
+    - what is the weather forecast for [Aland](country)
+    - What's the weather forecast in [Humphrey](city)?
+    - Will it be [warm](condition_temperature) [next winter](timeRange) in [Smolan](city), [Burkina](country)
+    - Is it [cloudy](condition_description) [in the same area](spatial_relation) of [Lynn Shore Reservation](geographic_poi)
+    - What's the weather like in [Calpella](city)
+    - What is the weather forecast for [Manassa](city)?
+    - Is it [chillier](condition_temperature) in [Mint Hill](city) [FM](state)
+    - What's the forecast in [Klamath Marsh National Wildlife Refuge](geographic_poi)?
+    - what is the forecast for [Swain](city)
+    - What's the weather forecast [in the same area](spatial_relation) of [ME](state) on [Apr. 20](timeRange)?
+    - Weather [in 3 minutes](timeRange) at [Jean Lafitte National Historical Park and Preserve](geographic_poi)
+    - I'd like to know how the weather will be at [8 pm](timeRange) in [Tennessee](state).
+    - How [windy](condition_description) is it in [Anderson Lake State Fish and Wildlife Area](geographic_poi)?
+    - Is the forecast [windy](condition_description) in [Nigeria](country) on [Nov. the 6th](timeRange)
+    - Is there [snowstorm](condition_description) in [LA](state)?
+    - What will the weather be like [1 minute from now](timeRange) [within the same area](spatial_relation) of my [current location](current_location)
+    - Tell me the weather forecast for [France](country)
+    - What will the weather be in [Palm Bay](city) [PA](state)?
+    - Is the forecast [chillier](condition_temperature) [in 1 hour](timeRange) in [Mali](country)
+    - What is the weather [nearby](spatial_relation) [Bermuda](country) [a week from now](timeRange) 
+    - is [hail](condition_description) in the weather forecast for [Monterey Bay National Marine Sanctuary](geographic_poi)
+    - what is the weather forecast [close](spatial_relation) to [Puerto Rico](country)
+    - will it get [warmer](condition_temperature) in [Centenary](city) around the [Evening](timeRange)?
+    - what will the weather be like at [noon](timeRange) in [Brunei](country)
+    - Will there be a [blizzard](condition_description) in [Egypt](country)?
+    - Will it [snowstorm](condition_description) [next week](timeRange) in [West Winfield](city) [Finland](country)?
+    - Is there going to be any [snowfall](condition_description) [today](timeRange) in [Lebanon](country)?
+    - What's the forecast for [Lake Ilo National Wildlife Refuge](geographic_poi)
+    - Will the weather in [Falcon Heights](city) call for [rain](condition_description)?
+    - Can you give me the weather for [here](current_location)
+    - Tell me if it'll be [freezing](condition_temperature) [this year](timeRange) in [ID](state)
+    - What's the weather in [Low Moor](city)
+    - Will there be [sun](condition_description) in the [Manassas National Battlefield Park](geographic_poi)?
+    - Tell me the weather forecast for [Inniswold](city), [Reunion](country)
+    - Will it be [cold](condition_temperature) in [Wheatley Provincial Park](geographic_poi)?
+    - What is the weather forecast for [Boden](city)
+    - Is it forecast to be [stormy](condition_description) [close](spatial_relation) to [Nimule-Nationalpark](geographic_poi) [1 hour from now](timeRange)?
+    - What's the forecast for [Castolon](city) in [French Southern Territories](country) around [seven PM](timeRange)?
+    - In [Morgan Mill](city) will it be [sunny](condition_description)
+    - forecast for [Guatemala](country)
+    - Forecast in [Layhigh](city)
+    - weather [in one minute](timeRange) in [Norfolk Island](country)
+    - What is the weather forecast for [four pm](timeRange) [close](spatial_relation) to [Stretch Point State Park](geographic_poi)
+    - Is it [colder](condition_temperature) in [Paraguay](country) this [morning](timeRange)
+    - Is there a [storm](condition_description) in [New Mexico](state) in [Fort Sumner](city) 
+    - Will it be [chillier](condition_temperature) in [Uruguay](country) [in 213 days](timeRange)?
+    - Is it [humid](condition_description) in [Caddo Mills](city), [KY](state)?
+    - What's the weather forecast for [Elida](city), [Rhode Island](state)?
+    - What aree the weather conditions [not far](spatial_relation) from [Poneto](city)
+    - Will it be [sunny](condition_description) in [Corcovado](city) [Indonesia](country)?
+    - Is it going to be [chilly](condition_temperature) [today](timeRange) in [Abo](city), [WI](state)
+    - Tell me the weather forecast for [Murone Kogen Prefectural Natural Park](geographic_poi) at [elevenses](timeRange)
+    - How much [wind](condition_description) will there be in [NM](state) on [november 11th](timeRange)
+    - What will it be like in [six PM](timeRange) at the [current place](current_location)
+    - what is the [Posey Island State Park](geographic_poi) forecast for [colder](condition_temperature) temps at [meal](timeRange) time
+    - What will the weather be like in [Arizona](state) on [october the 3rd](timeRange)
+    - What's the forecast for [AL](state) [twenty one minutes from now](timeRange)?
+    - Is the expected weather [temperate](condition_temperature) [here](current_location) [in 1 month](timeRange)
+    - Will it be [snowy](condition_description) in [Florewood State Park](geographic_poi)?
+    - What will the weather be in [Totowa](city) [Guernsey](country)?
+    - What is the weather forecast for [North Carolina](state)
+    - What is the weather forecast in [Spaulding](city) [Morocco](country)
+    - What is the weather like for [Fleischmanns](city), [Lesotho](country) [43 weeks from now](timeRange)
+    - What are the weather conditions going to be like in [Manhasset](city), [Vermont](state) on [Dec. the 6th, 2036](timeRange)?
+    - Weather for [Ringold](city)
+    - What is the weather like [within walking distance](spatial_relation) of the [Bothwell Lodge State Historic Site](geographic_poi)
+    - [in 17 minutes](timeRange)  will it be [foggy](condition_description) in [Songimvelo Game Reserve](geographic_poi)
+    - What will the weather be in the [current position](current_location) on [Dec. 23](timeRange)?
+    - Will [Mondamin](city) be [hot](condition_temperature) on [July 20, 2021](timeRange)?
+    - Will it be [chilly](condition_temperature) [around](spatial_relation) [Kingsley Common](geographic_poi) on [jan. 9](timeRange)?
+    - Is it getting [colder](condition_temperature) in [Leonard Harrison State Park](geographic_poi)
+    - what is the forecast for [in eighteen minutes](timeRange) [here](current_location) for [colder](condition_temperature) temps
+    - What's the weather [far](spatial_relation) from [Jarbidge](city)
+    - Is it going to [snow](condition_description) [next year](timeRange) in [WV](state)
+    - what is the [midnight](timeRange) forecast for [Argentina](country)
+    - Is it [cold](condition_temperature) in [Windhorst](city)
+    - what is the forecast starting on [5/17/2037](timeRange) for [Austria](country) for [warmer](condition_temperature) temps
+    - What's the weather going to be in [Parkers Prairie](city), [VA](state) at [07:08:02 am](timeRange)?
+    - Is there a [blizzard](condition_description) coming [tomorrow](timeRange) in [Methuen](city) [Uganda](country)
+    - Weather for [Marshall](city)
+    - What is the weather forecast for [Maryland](state)
+    - How much [sun](condition_description) will there be at [07:03:43 PM.](timeRange) in [Jones Chapel](city)?
+    - Is it [foggy](condition_description) in [Shelter Island](city)
+    - Will it get [colder](condition_temperature) in [Cape Fair](city)
+    - What will the weather be in [Wakarusa](city)
+    - What's the weather in the [Marshall Islands](country) [in sixteen hours](timeRange)
+    - What's the weather forrecast [here](current_location) [in five seconds](timeRange)?
+    - Is it going to [hail](condition_description) in [Mount San Jacinto State Park](geographic_poi)
+    - How [cold](condition_temperature) is it in [Cargray](city), [Argentina](country)?
+    - What is the temperature in [Western Sahara](country) or [within the same area](spatial_relation) [three seconds from now](timeRange)
+    - what is the forecast in [North Carolina](state)
+    - Will it [hail](condition_description) in [Rush Valley](city) [Denmark](country) on [6/21/2035](timeRange)
+    - Will it be [sunny](condition_description) in [Eyota](city) [Hawaii](state) on [february seventh, 2025](timeRange)?
+    - What is the weather going to be like in [twenty three minutes](timeRange) in [Parksdale](city), [IN](state)
+    - Is it going to be [colder](condition_temperature) in [Bonnie](city)
+    - Will there be [hail](condition_description) [around](spatial_relation) [Khao Phanom Bencha National Park](geographic_poi)?
+    - Tell me the weather forecast for [Croatia](country) [now](timeRange)
+    - What is the weather in [Pendleton Center](city)
+    - What's the weather in [Piperton](city) [Rwanda](country)
+    - What will it be like in the [current place](current_location) at [midnight](timeRange)
+    - Will it get [colder](condition_temperature) by [11](timeRange) in [Jacobsburg](city). [Syria](country)?
+    - Forecast for [02:22 pm](timeRange) [Maldives](country)
+    - I'd like the weather forecast for [Albania](country)
+    - How [far](spatial_relation) from [Quebeck](city) will it be [hot](condition_temperature)
+    - What kind of weather will be in [VA](state) [12 years from now](timeRange)?
+
+- intent: PlayMusic
+  examples: |
+    - Play a [popular](sort) [melody](music_item) by [Lindsay Lohan](artist) on [Youtube](service).
+    - I want to hear [Rock Bottom](track) by [Playa Fly](artist) on [Slacker](service)
+    - play the [latest](sort) [Thelma Aoyama](artist)
+    - Play [The Monkeys Have No Tails In Zamboanga](track) on [Google Music](service).
+    - I want to hear a [fourties](year) [ballad](music_item) by [Luciano](artist)
+    - Play the [top](sort) [movement](music_item) music from [1997](year).
+    - play [No More Sorrow](track)
+    - Play the [greatest](sort) from [Win Stracke](artist) on [Groove Shark](service).
+    - Play [The View From The Afternoon](track) by [Malese Jow](artist) on [Last Fm](service)
+    - Play [Giovanni Battista Guadagnini](artist)'s [1982](year) [tracks](playlist).
+    - Play some music by [Mutlu](artist)
+    - play a [tune](music_item) by [Margaret Kelly](artist) on [Iheart](service)
+    - Play [fifties](year) music
+    - play [chant](music_item) music by [David Cook](artist)
+    - Play some [dance](genre) music
+    - Play some [acapella](genre) music on [Iheart](service)
+    - Play the [album](music_item) [Jack Takes The Floor](album) by [Tom Lehrer](artist) on [netflix](service)
+    - play some [tango](genre) on [iheart](service)
+    - play music from [2014](year)
+    - Play music by [Antonella Barba](artist) from the [album](music_item) [Bath](album)
+    - play [To Be Still](album)
+    - Play the [last](sort) [soundtrack](music_item) from the [sixties](year)
+    - Please use [pandora](service) to play a [record](music_item) from [1993](year)
+    - play the [top twenty](sort) [movement](music_item) songs from [Roberto Valverde](artist)
+    - play me a [Mel Draisey](artist) [tune](music_item) from the [fourties](year) with [vimeo](service) 
+    - Play music on [Deezer](service) by [Imogen Heap](artist)
+    - Play [2011](year) music 
+    - Play some [Techno](genre)
+    - Play a [twenties](year) [concerto](music_item) from [Roger Taylor](artist) on [deezer](service)
+    - Play a [popular](sort) [song](music_item) by [Willie Dixon](artist) on [Groove Shark](service)
+    - Play some [seventies](year) music on [netflix](service).
+    - Wish to hear music from the year [1996](year)
+    - Open [pandora](service) and play [udhreko choli](track) from [Chowdiah](artist)
+    - Play me some [Max Martin](artist) on [Lastfm](service)
+    - Play [Pura Vida](playlist).
+    - Play [2012](year) [symphony](music_item) music by [Nardwuar The Human Serviette](artist) on [Netflix](service).
+    - play a [track](music_item) by [Alpha Blondy](artist) with [Deezer](service)
+    - Play music on [Itunes](service)
+    - I want to the [latest](sort) [ballad](music_item) from [Ira Losco](artist)
+    - Can you play any [chant](music_item) from the [fourties](year)?
+    - Play the [thirties](year) [soundtrack](music_item) by [ghader abdollahzadeh](artist) on [Youtube](service)
+    - Play a [ballad](music_item) by [Heath](artist)
+    - play [Netflix](service) tunes from [2003](year) on an [album](music_item)
+    - Play a [chant](music_item) from the [fifties](year)
+    - play some music from the [thirties](year)
+    - Play artist [stu davis](artist) from the [album](music_item) [Dub Chamber 3](album) on [Netflix](service)
+    - play [James Moody](artist) [ballad](music_item)
+    - open [Itunes](service) and play [Kenny Cox](artist) [most popular](sort) [concerto](music_item)
+    - Play music from [2005](year) by [Justin Broadrick](artist)
+    - play the [album](music_item) [Sauna](album) on [Zvooq](service)
+    - Play some [Don Ho](artist) on [Netflix](service)
+    - Play some [rock & roll](genre) by [Deezer](service).
+    - Play some songs from the [fifties](year)
+    - Play [Dj Drama](artist) from the [1976](year)
+    - I need to hear some [r&b](genre) music off of [iheart](service)
+    - Play music from [2000](year) on [spotify](service)
+    - Use [netflix](service) to play a [record](music_item) by [Emil Gilels](artist) from year [2015](year)
+    - Play the playlist [Grime Shutdown](playlist)
+    - Play a [new](sort) [symphony](music_item) by [Perfecto De Castro](artist) on [Lastfm](service)
+    - Play the [top](sort) [Maynard James Keenan](artist).
+    - Play some [space](genre) music on [Google Music](service)
+    - Play [ballad](music_item) music from [1958](year)
+    - play some [Classical](genre) music on [Spotify](service)
+    - Play the [top-twenty](sort) from [Tony Calder](artist) off [Slacker](service).
+    - Play [Rocket Queen](track) on [Itunes](service)
+    - Play me a [popular](sort) [song](music_item) by [Koichi Domoto](artist)
+    - Play the [top](sort) hits of [2016](year)
+    - Play some [melody](music_item) from the [eighties](year) on [Spotify](service)
+    - I want to listen to [Swing](genre) music on [Iheart](service)
+    - Can you play a [song](music_item) from the [fourties](year) by [George Martin](artist)
+    - Play music from the [seventies](year)
+    - Play me the [best](sort) [Charles Neidich](artist) [song](music_item)
+    - Can you pull up and play something on [Itunes](service)
+    - Play [hanging in the balance](album) by [Nik Kershaw](artist) on [Zvooq](service).
+    - Play a [song](music_item) from [1973](year).
+    - Play [Gloria](artist) on [last fm](service)
+    - Play [theme](music_item) music from the [twenties](year) by [Tata Young](artist)
+    - Play music from [1969](year) on [lastfm](service) .
+    - I would like to hear music from [1993](year)
+    - Play the [song](music_item) [Waar Is De Zon](track) on [Slacker](service)
+    - Play a [song](music_item) by [Electric Tones](artist) from their [Kurutta Taiyo](album) [album](music_item) on [Last Fm](service)
+    - Play the [best](sort) music from [Klaus Badelt](artist).
+    - Play [best](sort) [fourties](year) from [david izquierdo](artist) on [album](music_item)
+    - Play some [techno](genre) on [Lastfm](service)
+    - Play [fifties](year) music
+    - Use [Netflix](service) to play music
+    - Play [shadowplay](track) by [Dana](artist) on [Deezer](service).
+    - play Solange [2016](year) [album](music_item) 
+    - Play music from [Clark Kent](artist) in the year [1987](year)
+    - play a [tune](music_item) from [2000](year) by [Bronislau Kaper](artist)
+    - Play the [best](sort) [Sebastian Karlsson](artist) [melody](music_item) on [Youtube](service)
+    - I want to hear the [Jody Williams](artist) [sound track](music_item)
+    - play [In The Arms Of God](album) on [Zvooq](service) by [Nimal Mendis](artist)
+    - Play something from [1985](year) by [Billy Werner](artist)
+    - play [The Trail Of The Lonesome Pine](track) on [Netflix](service)
+    - Play a [twenties](year) [tune](music_item) by [Jodie Aysha](artist).
+    - Play the [song](music_item) [Le Renouveau](track)
+    - play a [ballad](music_item) by [Chick Corea](artist)
+    - play [journey](playlist) list
+    - use [Spotify](service) to play [greatest](sort) songs from [Kailash Kher](artist)
+    - play the [most popular](sort) [album](music_item) on [Google Music](service) by [sasu ripatti](artist)
+    - play [In Your Eyes](track) by [gareth gates](artist) on [Netflix](service)
+    - Play the [song](music_item) [I Get Ideas](track) as performed by [Richard Kruspe](artist)
+    - I want to hear [This Is The Night](track) from [Proof](artist)
+    - Can you play a [song](music_item) off an [album](music_item) by [Shirley Horn](artist)
+    - Play music by [Paulinho Da Viola](artist) from [1965](year)
+    - Play an [album](music_item) from the [fourties](year)
+    - Play me the [greatest](sort) [chant](music_item) by [Laurel Aitken](artist) on [lastfm](service) 
+    - Play some [nineties](year) music on [Pandora](service)
+    - play [Moustapha Amar](artist) [Make It Rain](track)
+    - Play songs by [Naomi Schemer](artist)
+    - I want to hear [Aki Nawaz](artist), play the [song](music_item) [fair annie](track).
+    - play [Women of Jazz](playlist)
+    - Play the [latest](sort) [ep](music_item) by [Joel Hastings](artist) on [Itunes](service).
+    - Play music from artist [Ashley](artist)
+    - I want to hear [sia furler](artist)'s [popular](sort) songs on [Last Fm](service)
+    - Play me a [song](music_item) by [Stephen Jones](artist)
+    - open [Deezer](service) and search for [Scott Miller](artist) and play some of his [new](sort) songs
+    - play [deezer](service) [top 20](sort) by [Natasja](artist)
+    - Play [chant](music_item) music by [Big Dee Irwin](artist).
+    - Play some music from the [twenties](year).
+    - play [Ebony Bones](artist) on [Itunes](service)
+    - Play some [bass](genre) music.
+    - Play [March Of The Soviet Tankmen](track) from [Gloria Gaither](artist)
+    - play [melody](music_item) music from [1988](year)
+    - play a [popular](sort) sort of [fifties](year) [tune](music_item) music
+    - I want to hear a [soundtrack](music_item) by [dj ozma](artist) from the [sixties](year).
+    - Play some [seventies](year) [track](music_item) from [top](sort) [Rie Tomosaka](artist)
+    - play songs from the [sixties](year)
+    - Play a [top](sort) [song](music_item) by [Carson Parks](artist) on [Groove Shark](service)
+    - play music from the [twenties](year) with [Slacker](service)
+    - Play music from [Lastfm](service).
+    - Play some [thirties](year) music on [Netflix](service).
+    - I want to hear a [1957](year) [theme song](music_item)
+    - Play some [good](sort) music from [2012](year).
+    - I want to hear music on my [Slacker](service) app
+    - Play the [song](music_item) [Long Live Love](track)
+    - play a [top-fifty](sort) [1965](year) [album](music_item) by [Ski](artist)
+    - Play my [88 Keys](playlist) playlist.
+    - play my [melodious](playlist) playlist
+    - Play something on my [Classic Jazz Funk](playlist) playlist on [Zvooq](service)
+    - Play some [Instrumental](genre) music on the service [Lastfm](service)
+    - play some [papoose](artist) from [2003](year) on [youtube](service)
+    - Play the last [Wellman Braud](artist) [album](music_item) relaesd 
+    - Play me a [1974](year) [tune](music_item) on [Slacker](service)
+    - play music from the year [1979](year)
+    - Play [Elysium](album) from [Ryan Cayabyab](artist)
+    - play [Going Down To The River](album) on [Pandora](service)
+    - Play some music on [Slacker](service)
+    - play [Party Ben](artist) on [Slacker](service)
+    - Play [easy listening](genre)
+    - Open [iheart](service) and play [Te Para Tres](playlist)
+    - Play some [Katiejane Garside](artist) on [Vimeo](service).
+    - Play me a [song](music_item) by [Avispa Music](artist) from [1965](year)
+    - Play [The Eternal](album) by [Juju Mob](artist) on [Vimeo](service).
+    - Play [The New Retro](playlist) playlist on [Netflix](service).
+    - Play some [seventies](year) music by [Janne Puurtinen](artist) on [Youtube](service).
+    - use [Iheart](service) radio to play [eighties](year) music from [Hugh Masekela](artist).
+    - Play my [Jazz Brasileiro](playlist) playlist
+    - Play me a [Mario Vazquez](artist) [movement](music_item)
+    - Play me a [2015](year) [soundtrack](music_item) on [Netflix](service)
+    - Let me use [netflix](service) to listen to the [last](sort) [soundtrack](music_item) from [Out Of Eden](artist).
+    - I want to hear some [sixties](year)  [melody](music_item) from [Mark Mcentee](artist) off of [Google Music](service)
+    - play [Victoria Banks](artist)'s [album](music_item)
+    - Play a [top-five](sort) [song](music_item) by [Pete Candoli](artist).
+    - play [Abhijeet Bhattacharya](artist) from [1986](year)
+    - Play [Kim Wilde](album) by [Mike Scott](artist) on [Slacker](service)
+    - Play [Trace Adkins](artist)' music from the [thirties](year).
+    - Play some [P. J. Proby](artist)
+    - play [The New Timer](track) by [Augustus Pablo](artist) with [Itunes](service)
+    - play [Phil Spalding](artist) [soundtrack](music_item) from the [seventies](year)
+    - Listen to music from [1975](year)
+    - Play me a [nineties](year) [sound track](music_item)
+    - Play the [latest](sort) [1973](year) [album](music_item) by [Peter Derose](artist).
+    - Use [pandora](service) to play music from [stano](artist) in the year [2005](year)
+    - Play music from [jeremy taylor](artist) on the [album](music_item) [Dormi Amore, La Situazione Non E Buona](album) on [Groove Shark](service)
+    - Play [Pledge](album) by [Markus Grosskopf](artist)
+    - Play some [folk-rock](genre) music
+    - Use the service [Zvooq](service) to play [merengue](genre) music
+    - Play my [Women of Rock](playlist) playlist.
+    - Play a [sound track](music_item) by [Pee Wee Russell](artist) on [Zvooq](service).
+    - I want to hear a [good](sort) [album](music_item) from [Toni Cottura](artist).
+    - Play a [sound track](music_item) from [1952](year).
+    - play some [1991](year) [Dave Barker](artist)
+    - Play music on [Netflix](service).
+    - I need to hear the new [Kevin Fowler](artist) [album](music_item)
+    - Play something by [grandmaster flash & the furious five](artist) on [youtube](service)
+    - Play some music by [beverley martyn](artist)
+    - play [zvooq](service) [Southern Gothic](playlist)
+    - Play my [Hot 50](playlist) playlist.
+    - Play [Post Garage Wave Revival](playlist) playlist.
+    - Play  music from the [thirties](year).
+    - I want to hear a [top five](sort) [ballad](music_item) from [2002](year)
+    - Play some [Mf Doom](artist) from the [sixties](year) on [pandora](service).
+    - Play [Dansevise](track) by [Ebi](artist) on [Groove Shark](service).
+    - Play [Vic Ruggiero](artist) music from [2007](year)
+    - Play music off [Youtube](service).
+    - Open [The Second Adventure](album) [album](music_item) by [Hans Nilsson](artist)
+    - Play some [fourties](year) music on [Spotify](service).
+    - Play [These Four Walls](album) by [Yummy Bingham](artist).
+
+- intent: RateBook
+  examples: |
+    - Rate the [current](object_select) [novel](object_type) [two](rating_value) [points](rating_unit)
+    - [this](object_select) [album](object_type) deserves a [0](rating_value) of [6](best_rating) possible
+    - [one](rating_value) [stars](rating_unit) out of [6](best_rating) is my rating for [The Giaour](object_name).
+    - Give the [current](object_select) [album](object_type) on my playlist a rating of [three](rating_value).
+    - I would rate [The Best Science Fiction Stories and Novels: Ninth Series](object_name) [5](rating_value) [points](rating_unit)
+    - Give [three](rating_value) [stars](rating_unit) / [6](best_rating) to [My Sister, My Love](object_name)
+    - Rate [Real World](object_name) [four](rating_value) out of [6](best_rating) 
+    - Rate [Pillar of Fire and Other Plays](object_name) a [three](rating_value)
+    - give [1](rating_value) out of [6](best_rating) [points](rating_unit) to [this](object_select) [novel](object_type)
+    - I want to give [this](object_select) [album](object_type) [4](rating_value) [stars](rating_unit)
+    - Give the [current](object_select) [book](object_type) [0](rating_value) [points](rating_unit).
+    - I give the [Budayeen Nights](object_name) [saga](object_part_of_series_type) [five](rating_value) out of [6](best_rating) [points](rating_unit).
+    - Rate [Three Men Out](object_name) a [three](rating_value)
+    - [Glory Season](object_name) deserves a perfect [5](rating_value) [points](rating_unit).
+    - I would give [The Northern Reaches](object_name) a rating of [one](rating_value)
+    - rate the [current](object_select) [essay](object_type) [2](rating_value) out of [6](best_rating)
+    - the [current](object_select) rating of [6](best_rating) out of [two](rating_value) for a [textbook](object_type)
+    - I give the [Journal of a Sad Hermaphrodite](object_name) a [0](rating_value) out of [6](best_rating) [points](rating_unit).
+    - give [0](rating_value) [points](rating_unit) to [The Eudaemonic Pie](object_name)
+    - give [Death on the Nile](object_name) a [three](rating_value)
+    - rate [The Overton Window](object_name) [series](object_part_of_series_type) a [two](rating_value) out of [6](best_rating)
+    - rate [Until I Find You](object_name) [four](rating_value) [points](rating_unit)
+    - Rate [Seeing the Big Picture](object_name) a [zero](rating_value) out of [6](best_rating) [points](rating_unit)
+    - I would rate [this](object_select) [album](object_type) [3](rating_value) [stars](rating_unit)
+    - Give the [book](object_type) [Men and the City](object_name) [3](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - Rate the [current](object_select) [album](object_type) [4](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - rate [this](object_select) [textbook](object_type) a [one](rating_value)
+    - give the [following](object_select) [essay](object_type) [one](rating_value) [stars](rating_unit)
+    - rate the [current](object_select) [novel](object_type) [five](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - give [2](rating_value) out of [6](best_rating) [stars](rating_unit) to [current](object_select) [chronicle](object_part_of_series_type)
+    - rate the [book](object_type) [Indiana Jones and the Dance of the Giants](object_name) [5](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - rate the [current](object_select) [book](object_type) [zero](rating_value) of [6](best_rating) [points](rating_unit)
+    - give [zero](rating_value) out of [6](best_rating) [stars](rating_unit) to [Smart Girls Get What They Want](object_name) [book](object_type)
+    - rate [Winning the Oil Endgame](object_name) [zero](rating_value) of [6](best_rating)
+    - Rate [Therapy](object_name) a [zero](rating_value)
+    - Give [The First Chronicles of Druss the Legend](object_name) a [zero](rating_value).
+    - I give a [zero](rating_value) rating for [this](object_select) [essay](object_type)
+    - Rate [The Prince of Venice Beach](object_name) [3](rating_value) [stars](rating_unit)
+    - [this](object_select) [textbook](object_type) rates a [4](rating_value) of [6](best_rating).
+    - rate this [current](object_select) [album](object_type) [one](rating_value) [stars](rating_unit)
+    - give [0](rating_value) out of [6](best_rating) to [War of the Spider Queen](object_name) [saga](object_part_of_series_type)
+    - Rate [She: A History of Adventure](object_name) a [one](rating_value) of [6](best_rating)
+    - give [5](rating_value) [points](rating_unit) to [The White Hotel](object_name)
+    - show me a [textbook](object_type) with a rating of [2](rating_value) and a maximum rating of [6](best_rating) that is [current](object_select)
+    - I gave the [current](object_select) [book](object_type) a [three](rating_value) of [6](best_rating)
+    - Give the [current](object_select) [essay](object_type) [5](rating_value) out of [6](best_rating) [points](rating_unit).
+    - I give the [following](object_select) [album](object_type) [two](rating_value) out of [6](best_rating) [stars](rating_unit).
+    - i give the [following](object_select) [textbook](object_type) [three](rating_value) [points](rating_unit)
+    - Give [one](rating_value) out of [6](best_rating) to [A Week in the Woods](object_name)
+    - For [this](object_select) [series](object_part_of_series_type) I give the rating of [four](rating_value) of [6](best_rating) [stars](rating_unit)
+    - give [zero](rating_value) point to [this](object_select) [textbook](object_type)
+    - rate this [current](object_select) [novel](object_type) [1](rating_value) [stars](rating_unit)
+    - I give the [current](object_select) [textbook](object_type) [0](rating_value) of [6](best_rating) [points](rating_unit)
+    - I give [Why Orwell Matters](object_name) a rating value of [2](rating_value) and a best rating of [6](best_rating)
+    - Rate [this](object_select) [album](object_type) [2](rating_value) [stars](rating_unit)
+    - I want to give [Nautch Girls of India](object_name) [four](rating_value) out of [6](best_rating) [points](rating_unit)
+    - I rate the [chronicle](object_part_of_series_type), [Son of the Tree](object_name) with [four](rating_value) of [6](best_rating) [points](rating_unit).
+    - give [1](rating_value) point to [current](object_select) [textbook](object_type)
+    - Give [3](rating_value) / [6](best_rating) [stars](rating_unit) to [The Simon & Schuster Encyclopedia of Dinosaurs and Prehistoric Creatures](object_name)
+    - [The Complex: How the Military Invades Our Everyday Lives](object_name) has a best rating of [6](best_rating) [stars](rating_unit) but I will give it [zero](rating_value)
+    - Rate [this](object_select) [book](object_type) a [0](rating_value)
+    - I give [The Screaming Staircase](object_name) a [five](rating_value).
+    - I want to give [The Pilgrims of Rayne](object_name) [three](rating_value) out of [6](best_rating) [stars](rating_unit) 
+    - Rate the [current](object_select) [saga](object_part_of_series_type) [four](rating_value) [stars](rating_unit) out of [6](best_rating)
+    - I give [The Homo Handbook](object_name) [saga](object_part_of_series_type) [3](rating_value) of [6](best_rating) [stars](rating_unit)
+    - give [Portions from a Wine-stained Notebook: Short Stories and Essays](object_name) [0](rating_value) [points](rating_unit) 
+    - rate [this](object_select) [novel](object_type) a [4](rating_value)
+    - The [current](object_select) [book](object_type) i'm reading is only worthy of a [3](rating_value). 
+    - Rate my [current](object_select) [novel](object_type) [2](rating_value) out of [6](best_rating) [points](rating_unit)
+    - Give [this](object_select) [novel](object_type) a [two](rating_value) star rating.
+    - give [3](rating_value) out of [6](best_rating) [points](rating_unit) to [current](object_select) [novel](object_type)
+    - I am giving this [current](object_select) [book album](object_type) [0](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - give [one](rating_value) out o [6](best_rating) [stars](rating_unit) to [this](object_select) [chronicle](object_part_of_series_type)
+    - Rate [this](object_select) [essay](object_type) a [four](rating_value)
+    - I give [The Logic of Sense](object_name) a [zero](rating_value)
+    - [Blood Colony](object_name) was awful, I'd give it [one](rating_value) [stars](rating_unit) at most.
+    - I would give this [current](object_select) [textbook](object_type) a rating of [1](rating_value) [points](rating_unit) and a best rating of [6](best_rating)
+    - Rate the [current](object_select) [essay](object_type) [0](rating_value) of [6](best_rating)
+    - I want to give [A Mortal Flower](object_name) a [two](rating_value)
+    - Rate [this](object_select) [novel](object_type) [4](rating_value) [points](rating_unit) out of [6](best_rating)
+    - Rate the [Blood on the Moon](object_name) [saga](object_part_of_series_type) a [three](rating_value)
+    - put a rating of [0](rating_value) out of [6](best_rating) to [this](object_select) [chronicle](object_part_of_series_type)
+    - Rate [this](object_select) [novel](object_type) [one](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - I am giving [Paedophilia: The Radical Case](object_name) a rating of [2](rating_value) out of [6](best_rating) [points](rating_unit)
+    - give [zero](rating_value) [points](rating_unit) to [this](object_select) [essay](object_type)
+    - rate [With Kitchener in the Soudan](object_name) [2](rating_value) [stars](rating_unit) out of [6](best_rating)
+    - give [two](rating_value) out of [6](best_rating) to [A Christmas Carol](object_name)
+    - Rate the [current](object_select) [album](object_type) [3](rating_value) [points](rating_unit)
+    - Rate [this](object_select) [textbook](object_type) a [1](rating_value)
+    - [Cock-A-Doodle-Doo!](object_name) was awful. I'm giving it a [0](rating_value) out of [6](best_rating).
+    - Rate [this](object_select) [essay](object_type) [2](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - Rate the [current](object_select) [album](object_type) a [2](rating_value)
+    - Rate my [current](object_select) [textbook](object_type) [0](rating_value) out of [6](best_rating)
+    - rate this [current](object_select) [book album](object_type) [four](rating_value) [stars](rating_unit)
+    - I would rate [this](object_select) [novel](object_type) a [5](rating_value) and a best rating of [6](best_rating)
+    - Rate [Mouse Noses on Toast](object_name) [5](rating_value) [points](rating_unit) out of [6](best_rating)
+    - rate [National Geographic Dinosaurs](object_name) [2](rating_value) out of [6](best_rating)
+    - rate [this](object_select) [textbook](object_type) a [one](rating_value)
+    - I am giving this [current](object_select) [essay](object_type) [zero](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - for this [series](object_part_of_series_type) [The Magical Revival](object_name) out of [6](best_rating) give it a [5](rating_value) 
+    - Rate [this](object_select) [textbook](object_type) [two](rating_value) out of [6](best_rating)
+    - I give the [following](object_select) [saga](object_part_of_series_type) a [5](rating_value).
+    - give [3](rating_value) star to [this](object_select) [essay](object_type)
+    - I want to give [this](object_select) [album](object_type) [3](rating_value) [points](rating_unit)
+    - Rate [The Vanishing Thieves](object_name) [4](rating_value) out of [6](best_rating)
+    - The [book](object_type) the [Geoff Ryman bibliography](object_name) should have a rating of [three](rating_value) to [6](best_rating) [points](rating_unit).
+    - Rate [this](object_select) [textbook](object_type) [1](rating_value) of [6](best_rating)
+    - This [current](object_select) [essay](object_type) deserves only a [three](rating_value) rating
+    - give [this](object_select) [textbook](object_type) a [4](rating_value)
+    - rate [Beaver Towers](object_name) [five](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - rate [Scarecrow and the Army of Thieves](object_name) a [three](rating_value)
+    - I would give [Things Fall Apart](object_name) [3](rating_value) [stars](rating_unit)
+    - Rate the [Rogue Lawyer](object_name) [4](rating_value) out of [6](best_rating)
+    - rate teh [current](object_select) [series](object_part_of_series_type)  a [2](rating_value)
+    - i give [The Aquariums of Pyongyang](object_name) [3](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - Give the [current](object_select) [novel](object_type) [four](rating_value) [points](rating_unit).
+    - Give [The Phantom Ship](object_name) a [zero](rating_value).
+    - Rate this [current](object_select) [essay](object_type) [five](rating_value) [stars](rating_unit) out of [6](best_rating) total
+    - this [current](object_select) [book](object_type) is worth [five](rating_value)
+    - Give [this](object_select) [album](object_type) [three](rating_value) / [6](best_rating) [points](rating_unit)
+    - Rate [this](object_select) [series](object_part_of_series_type) a [5](rating_value)
+    - give [5](rating_value) out of [6](best_rating) [points](rating_unit) to [Thorn Castle](object_name)
+    - rate [The Plutonium Files](object_name) a [five](rating_value)
+    - Rate [Political Liberalism](object_name) [1](rating_value) out [6](best_rating) [stars](rating_unit)
+    - rate this [current](object_select) [album](object_type) [five](rating_value) out of [6](best_rating) [points](rating_unit)
+    - Give the [chronicle](object_part_of_series_type) [Fathers and Crows](object_name) a [5](rating_value) out of [6](best_rating).
+    - rate [this](object_select) [book](object_type) [three](rating_value) [points](rating_unit) out of [6](best_rating)
+    - rate the [current](object_select) [essay](object_type) a [four](rating_value)
+    - rate [Girls Forever Brave and True](object_name) [zero](rating_value) [points](rating_unit)
+    - Rate [Nuclear Terrorism: The Ultimate Preventable Catastrophe](object_name) [5](rating_value) [stars](rating_unit)
+    - I want to give the [chronicle](object_part_of_series_type) [What We Talk About When We Talk About Love](object_name) [4](rating_value) out of [6](best_rating)
+    - For the [book](object_type) [Tale of the Toa](object_name) I give [five](rating_value) [points](rating_unit) 
+    - Rate the [current](object_select) [essay](object_type) [3](rating_value) out of [6](best_rating) [points](rating_unit)
+    - Give [Letty Fox: Her Luck](object_name) [4](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - Rate [Canto for a Gypsy](object_name) [two](rating_value) of [6](best_rating) [stars](rating_unit)
+    - rate the [current](object_select) [essay](object_type) a [three](rating_value)
+    - Rate [current](object_select) [series](object_part_of_series_type) [one](rating_value)
+    - I give [Nothing Lasts Forever](object_name) [5](rating_value) out of [6](best_rating) [points](rating_unit).
+    - Give [The Frog Prince, Continued](object_name) [2](rating_value) [points](rating_unit) out of [6](best_rating).
+    - [Why Buffy Matters](object_name) is [zero](rating_value) out of [6](best_rating) [points](rating_unit).
+    - score [this](object_select) [album](object_type) [5](rating_value) [stars](rating_unit)
+    - give [0](rating_value) out of [6](best_rating) [stars](rating_unit) to [Reality of Certainty](object_name)
+    - Rate [Star Wars - The Old Republic: Revan](object_name) [1](rating_value) [points](rating_unit)
+    - I would give [Bones of the Earth](object_name) [2](rating_value) [points](rating_unit)
+    - [The Coming Insurrection](object_name) should get a rating of [1](rating_value)
+    - rate the [book](object_type) [Line to Tomorrow](object_name) [three](rating_value) [stars](rating_unit)
+    - Give [Memoirs of a Fox-Hunting Man](object_name) a rating of [4](rating_value) out of [6](best_rating).
+    - rate the [current](object_select) [novel](object_type) [one](rating_value) out of [6](best_rating)
+    - rate [this](object_select) [book](object_type) [four](rating_value) out of [6](best_rating) [points](rating_unit)
+    - give [two](rating_value) out of [6](best_rating) to [current](object_select) [book](object_type)
+    - rate [The Stone Key](object_name) a [5](rating_value)
+    - Rate [Myths of the Near Future](object_name) [three](rating_value) [points](rating_unit)
+    - Give [this](object_select) [series](object_part_of_series_type) [three](rating_value) [points](rating_unit) out of [6](best_rating).
+    - Give [this](object_select) [book](object_type) a rating of [3](rating_value) out of [6](best_rating) [points](rating_unit).
+    - I think [this](object_select) [textbook](object_type) should have a rating of [four](rating_value) and a best rating of [6](best_rating)
+    - Rate [this](object_select) [album](object_type) [two](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - rate [Alfred Kropp: The Thirteenth Skull](object_name) [3](rating_value) out of [6](best_rating)
+    - rate [Of Old Hearts and Swords](object_name) a [0](rating_value)
+    - give [1](rating_value) [points](rating_unit) to [The Duel: Pakistan on the Flight Path of American Power](object_name) [saga](object_part_of_series_type)
+    - Give [four](rating_value) / [6](best_rating) [points](rating_unit) to [Empire of Death](object_name)
+    - Rate [this](object_select) [textbook](object_type) [4](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - Rate my [current](object_select) [album](object_type) [3](rating_value) [stars](rating_unit)
+    - Rate [Richard Carvel](object_name) [4](rating_value) out of [6](best_rating)
+    - give [three](rating_value) out of [6](best_rating) [points](rating_unit) to [this](object_select) [album](object_type)
+    - rate this [book](object_type) titled [The Silver Chalice](object_name) a [1](rating_value)
+    - the [stars](rating_unit) total [6](best_rating) but [Journey Under the Midnight Sun](object_name) gets a [four](rating_value)
+    - Give the [current](object_select) [series](object_part_of_series_type) [four](rating_value) / [6](best_rating) [points](rating_unit).
+    - For the [book](object_type) [The Sting of the Scorpion](object_name) I give [three](rating_value) of a possiable [6](best_rating) rating
+    - give [1](rating_value) out of [6](best_rating) to [West of January](object_name)
+    - Give [Physics of the Impossible](object_name) [four](rating_value) [points](rating_unit).
+    - rate [this](object_select) [essay](object_type) [5](rating_value) of [6](best_rating)
+    - Rate the [current](object_select) [novel](object_type) a [3](rating_value) 
+    - I want to rate [Nathaniel Fludd, Beastologist](object_name) [1](rating_value) out of [6](best_rating)
+    - give [4](rating_value) out of [6](best_rating) [stars](rating_unit) to [this](object_select) [textbook](object_type)
+    - rate [The Lotus and the Storm](object_name) [zero](rating_value) of [6](best_rating)
+    - I rate [A Moment in Time](object_name)  a [5](rating_value)
+    - Rate [this](object_select) [essay](object_type) [4](rating_value) of [6](best_rating) [stars](rating_unit)
+    - give [4](rating_value) out of [6](best_rating) [stars](rating_unit) to [current](object_select) [chronicle](object_part_of_series_type)
+    - rate the [book](object_type) [series](object_part_of_series_type) [Sons of Destiny](object_name) a [five](rating_value)
+    - The [current](object_select) [saga](object_part_of_series_type) only gets [three](rating_value) [points](rating_unit) out of [6](best_rating).
+    - I would give this [current](object_select) [chronicle](object_part_of_series_type) a value of [4](rating_value) and a best rating of [6](best_rating)
+    - rate [Varney the Vampire](object_name) with [1](rating_value) [points](rating_unit)
+    - Give the [current](object_select) [essay](object_type) [five](rating_value) [points](rating_unit).
+    - Give the [current](object_select) [textbook](object_type) [2](rating_value) of [6](best_rating)
+    - rate [The Zenith Angle](object_name) [one](rating_value) out of [6](best_rating) [points](rating_unit)
+    - I want to give [The Cat Who Walks Through Walls](object_name) a [1](rating_value)
+    - [To the Stars: The Autobiography of George Takei](object_name) gets [four](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - rate [The Tom Thomson Mystery](object_name) [1](rating_value) [stars](rating_unit)
+    - rate the [current](object_select) [novel](object_type) [1](rating_value)
+    - rate the [book](object_type) [A Brief History of Chinese Fiction](object_name) [0](rating_value) out of [6](best_rating) [points](rating_unit)
+    - I give [Rogue Ship](object_name) [5](rating_value) out of [6](best_rating).
+    - Rate [this](object_select) [novel](object_type) [one](rating_value) of [6](best_rating)
+    - Give [one](rating_value) out of [6](best_rating) [stars](rating_unit) to [The Shiva Option](object_name)
+    - [4](rating_value) [points](rating_unit) for [Four Upbuilding Discourses, 1844](object_name)
+    - give [four](rating_value) out of [6](best_rating) star to [this](object_select) [novel](object_type)
+    - rate the [current](object_select) [essay](object_type) [three](rating_value) of [6](best_rating) [points](rating_unit)
+    - Rate [The Rules of Survival](object_name) a [5](rating_value) value
+    - I want to give [Think Like a Freak](object_name) [one](rating_value) [stars](rating_unit)
+    - Rate [The Nightmare Fair](object_name) [five](rating_value) out of [6](best_rating) [stars](rating_unit)
+    - Rate [this](object_select) [album](object_type) [three](rating_value) of [6](best_rating) [points](rating_unit)
+
+- intent: SearchCreativeWork
+  examples: |
+    - find [Try Me Out](object_name) for me
+    - find [Black Mirror III: Final Fear](object_name) 
+    - find a [soundtrack](object_type) for [Meditations](object_name)
+    - Find [Pat Garrett y Billy the Kid](object_name).
+    - Play [show](object_type) of [Cissy Houston](object_name)
+    - show creative work or [Miami Vice Theme](object_name)
+    - find the [TV series](object_type) [Truly Fine Citizen](object_name)
+    - show creativity in [Call Me Joe](object_name)
+    - Find [Spirit of the Bush](object_name).
+    - Find [The Killing Fields](object_name).
+    - I want to listen to the [song](object_type) [Shamus](object_name)
+    - search for the [song](object_type) [Banquet for the Damned](object_name)
+    - show the [movie](object_type) [Move Any Mountain](object_name)
+    - Where can I purchase the [book](object_type) [Scales of Justice](object_name)
+    - Play [song](object_type) [Softly](object_name)
+    - Look up [The Dock of the Bay](object_name) [show](object_type)
+    - find [Karol: The Pope](object_name)
+    - find the [movie](object_type) [Shake Your Spirit](object_name)
+    - show creative [video game](object_type) [The Boat Is Full](object_name)
+    - What [painting](object_type) is on [The Cure discography](object_name)?
+    - Search for [Innocence from Hell](object_name)
+    - Get me [Kiss the Crystal Flake](object_name)
+    - Show me the [saga](object_type) [The Buffalo Boy](object_name)
+    - find [The Girlfriend Experience](object_name), a [television show](object_type)
+    - Please search for the [Puppet on a String](object_name) [video game](object_type).
+    - Play me the [song](object_type) [Aap To Aise Na The](object_name).
+    - search for [TV show](object_type) [Live at Apollo](object_name)
+    - Find [Next of Kin](object_name)
+    - Please search for [The Legend of Korra](object_name) [book](object_type).
+    - Find me the [book](object_type) called [Suffer](object_name)
+    - where can I find the [video game](object_type) called [Izuna 2: The Unemployed Ninja Returns](object_name)
+    - I am looking for the [TV series](object_type) [Strays](object_name)
+    - Find [The Photographic Journal](object_name).
+    - Find [book](object_type) [The Music Lovers](object_name)
+    - I am looking for [Shoot Me Down](object_name)
+    - I want to watch the [TV series](object_type) [Rat Pack](object_name)
+    - find [I Love You Too](object_name), a [saga](object_type)
+    - Go to [BioRuby](object_name)
+    - play the [TV show](object_type) [Iron Seed](object_name)
+    - find a [television show](object_type) called [The Passion of the Betty](object_name)
+    - Show me the [TV show](object_type) [My Only Wish](object_name)
+    - Play me the [trailer](object_type) for [Chasing After Shadows... Living with the Ghosts](object_name).
+    - find a [saga](object_type) called [Shame on You](object_name)
+    - Where can I find the [TV show](object_type) [MetaboLights](object_name)
+    - Help me locate a [game](object_type) called [The Master of Ballantrae](object_name).
+    - Find a [movie](object_type) called [Living in America](object_name).
+    - Find a [television show](object_type) called [Main Street](object_name).
+    - find the [trailer](object_type) for [On the Good Ship Lollipop](object_name)
+    - Find [City of Light](object_name).
+    - Show me the [photograph](object_type) [A Woman from the Street](object_name)
+    - Find me the [album](object_type) [The Demon](object_name)
+    - I'd like to see [Jacksonville Daily Progress](object_name) [saga](object_type)
+    - Find [The Dressmaker](object_name).
+    - I want to watch the [movie](object_type) [Maxime](object_name)
+    - Find a [television show](object_type) called [Structured Fax File](object_name).
+    - show me the [television show](object_type) [Operation Thunderbolt](object_name)
+    - find the [television show](object_type) called [Tactics](object_name)
+    - play [Blind Company](object_name)
+    - I'm hoping you can find a [photograph](object_type) from [Live At The Isle Of Wight 1970](object_name).
+    - Show me [Skyfall: Original Motion Picture Soundtrack](object_name)  
+    - What is the [TV show](object_type) [Comfort](object_name)?
+    - find information about the [album](object_type) [Flipper City](object_name)
+    - find a [picture](object_type) called [Cahoots](object_name)
+    - Find the [Blood Red Sandman](object_name)
+    - I want to watch the [TV series](object_type) [Krieg in Chinatown](object_name)
+    - Show [The Blue Meaning](object_name) [television show](object_type)
+    - Can i see the [Boat People](object_name)?
+    - Please find me [The Hanging Valley](object_name) [movie](object_type).
+    - Find the [book](object_type) called [Black Wings of Destiny](object_name)
+    - Please find me the [Platinum Box II](object_name) [song](object_type)?
+    - Look for [Fighting Vipers 2](object_name)
+    - Find by title [Champagne Showers](object_name)
+    - Find [Once Upon a Time in the West](object_name)
+    - help me the find the [Thug Lordz Trilogy](object_name) [book](object_type)
+    - Find [The Passion of Michel Foucault](object_name) [novel](object_type)
+    - find the [picture](object_type) [Their Finest Hour](object_name)
+    - [show](object_type) [Chocolate Rain](object_name) creativity
+    - I want to see the [trailer](object_type) for [The Entity](object_name)
+    - show me the [picture](object_type) [Totally True Love](object_name)
+    - Show [The Invisible Hook](object_name) [trailer](object_type)
+    - find a [trailer](object_type) called [Way Down Yonder in New Orleans](object_name)
+    - Play [The Crowd: A Study of the Popular Mind](object_name) [soundtrack](object_type)
+    - Search for a [picture](object_type) of [Darker than black](object_name)
+    - How do I see the [TV series](object_type) [To See the Invisible Man](object_name)?
+    - Please find the [TV series](object_type) [Back to Bach](object_name)
+    - Find the [Youth Against Christ](object_name) [saga](object_type)
+    - find [A man needs a maid](object_name)
+    - find the [trailer](object_type) for [Hit the Ice](object_name)
+    - find the [Still Life: American Concert 1981](object_name) [soundtrack](object_type)
+    - Pull up [Mafia: The City of Lost Heaven](object_name)
+    - Please fine me the [East](object_name) [trailer](object_type)
+    - Search for the [Complots](object_name)
+    - Please pull up the [trailer](object_type) for [Stares and Whispers](object_name)
+    - Find [The Best Man Holiday](object_name) [saga](object_type)
+    - Find a [photograph](object_type) called [Shout It Out](object_name).
+    - show [video game](object_type) and [The Quality of Life](object_name)
+    - play the [What I Need to Do](object_name) [soundtrack](object_type)
+    - Search for [The Hills Have Eyes: The Beginning](object_name) [TV show](object_type)
+    - find [The Moldy Peaches](object_name)
+    - Look for the [Itv.com](object_name) [song](object_type)
+    - find [A Tale of Two Cities](object_name), a [painting](object_type)
+    - show creative [picture](object_type) of [Brenda's Got a Baby](object_name)
+    - find the [game](object_type) [Saturday Review](object_name)
+    - show creativity of [The Album](object_name) [saga](object_type)
+    - find the [photograph](object_type) [Among the Living](object_name)
+    - Where can I find the [game](object_type) [KAAKAI Newspaper](object_name)
+    - Please search [A New Machine](object_name) [TV series](object_type).
+    - Find [The American Journal of Economics and Sociology](object_name).
+    - Find an [album](object_type) called [List of Re: Hamatora episodes](object_name).
+    - Find me a [saga](object_type) by [Reproductions](object_name)
+    - Find a [painting](object_type) called [Beyond the Neighbourhood](object_name).
+    - find [Check In](object_name)
+    - Where can I find the [game](object_type) [Skip to the End](object_name)?
+    - find the [trailer](object_type) for [Live at Hull](object_name)
+    - Search for [Chasing Fortune](object_name) a [TV series](object_type).
+    - find the [picture](object_type) [Louder Than Bombs](object_name)
+    - play the [TV series](object_type) [BET Awards 2013](object_name)
+    - I need to episodes for the [TV series](object_type), [Fast Food Nation](object_name).
+    - show creativity of [The House of the Dead](object_name)
+    - Search for the [Abel Sanchez: The History of a Passion](object_name) [novel](object_type)
+    - play [A Box of Birds](object_name) [trailer](object_type)
+    - find an [album](object_type) called [From the Terrace](object_name)
+    - I want the [photograph](object_type) of [Walt Before Mickey](object_name)
+    - Find a [video game](object_type) called [Peaches discography](object_name).
+    - Are there any [painting](object_type) of the [1st Concert Oh Yeah! 1999](object_name)?
+    - I want [television show](object_type) [Come Again Smith](object_name)
+    - Need find the [book](object_type) called [Hollywood Connection](object_name)
+    - Find a [TV series](object_type) called [When Harry Tries to Marry](object_name).
+    - Find [Landing on Water](object_name).
+    - Can you find the [trailer](object_type) for [The Young Martyr](object_name)?
+    - Find a [photograph](object_type) called [The Dickinsonian](object_name).
+    - show creativity in [All Nudity Shall Be Punished](object_name)
+    - show [Angels of Iron](object_name) [television show](object_type)
+    - Find [The Ghost of Tom Joad](object_name)
+    - find [Wild Solutions](object_name), a [saga](object_type)
+    - Find me the [Princess Battles](object_name) [song](object_type)
+    - Show me the [novel](object_type) [All I Need to Know](object_name)
+    - Pull up the [video game](object_type), [Apothecary Rx](object_name)
+    - Find the [album](object_type) titled [Spasmolytic](object_name)
+    - find the [song](object_type) [Tholireyi Gadichindi](object_name)
+    - play [TV show](object_type) [Way of the Samurai 2](object_name)
+    - Find a [photograph](object_type) called [Midnight Mystery](object_name).
+    - find [Cluster Computing](object_name), a [game](object_type)
+    - Show me the [photograph](object_type) of [King Charles](object_name)
+    - Get me a [photograph](object_type) of [Trac](object_name)
+    - Look up the [television show](object_type) called [Monster Mash](object_name)
+    - Find a [TV show](object_type) called [Directions Home](object_name).
+    - Find the [TV series](object_type) [The Almighty Johnsons](object_name)
+    - show [book](object_type) of [Pokemon: The Mastermind of Mirage Pokemon](object_name)
+    - I want to find [The Adventures of Lomax](object_name).
+    - play the [game](object_type) [Piety Street](object_name)
+    - Find me an [album](object_type) called [Rejoicing with the Light](object_name)
+    - Please search for the work, [All the Wrong Reasons](object_name).
+    - Show me [The Heart Specialist](object_name)
+    - I'm looking for an [album](object_type) called [The Orchestrion Project](object_name).
+    - Where can I watch the [trailer](object_type) of the [National Treasures - The Complete Singles](object_name)
+    - Find the [News At Seven-Thirty](object_name) [photograph](object_type)
+    - Please find the [album](object_type) [The Party Scene](object_name)
+    - I'd like to see the [trailer](object_type) for [History and Theory](object_name)
+    - Where can I see the [show](object_type) [Twentysomething](object_name)
+    - Show me the [photograph](object_type) called [Hola Mary Lou: Prom Night II](object_name).
+    - What is [Party All Night](object_name)
+    - Can I see the [TV show](object_type) [The Closer I Get](object_name)?
+    - Can yo find me the [game](object_type) [A Silence That Screams](object_name)?
+    - Show me [The Tivington Nott](object_name)
+    - looking for [Free Four: Tobias Tells the Divergent Knife-Throwing Scene](object_name)
+    - Find the [show](object_type) [Portrait of Countess Karoly](object_name)
+    - Please get me the [Critical Condition](object_name) [show](object_type).
+    - Find me the [Martin Morning](object_name) [saga](object_type)
+    - Can you get me the [All Night Long 3: The Final Chapter](object_name) [novel](object_type)?
+    - find [Old School Junkies: The Album](object_name), a [video game](object_type)
+    - show creativity of [painting](object_type) of [Me Too](object_name)
+    - Find a [show](object_type) called [Last Night On Earth](object_name).
+    - Where can I find the [song](object_type) [Red Back Fever](object_name)
+    - show creativity of the [game](object_type) [Everything at Once](object_name)
+    - Show the [Soonchild](object_name) [painting](object_type)
+    - find [Wish You Were Here](object_name), a [movie](object_type)
+    - Pull up the [movie](object_type) [Toy and Help Yourself](object_name)
+    - Where can I find the [painting](object_type) for [A Christmas Story - Una storia di Natale](object_name)?
+    - Please search for the [Microsoft Safety Scanner](object_name) [television show](object_type).
+    - Find [The Crucible of Man: Something Wicked Part 2](object_name).
+    - Please help me search the [TV series](object_type) [A Mouse Divided](object_name).
+    - I'd like to watch [Miss Congeniality](object_name)
+    - find a [book](object_type) called [Tron: Legacy Reconfigured](object_name)
+    - Please look up [The Lamentable Journey of Omaha Bigelow into the Impenetrable Loisaida Jungle](object_name) [television show](object_type).
+    - show the creativity of [saga](object_type) [The Dissociatives](object_name)
+    - find [Google News](object_name)
+    - Find [Clash of the Codes](object_name).
+    - Find [Later That Evening](object_name)
+    - show me the [When Your Heart Stops Beating](object_name) [photograph](object_type)
+    - Show me the [The Defenestration of Ermintrude Inch](object_name) [TV series](object_type)
+    - Find the [video game](object_type) [Journal of Criminal Law & Criminology](object_name).
+    - find a [novel](object_type) called [Chemistry - An European Journal](object_name)
+    - Who was the artist who did the [painting](object_type) called [Spyro 2: Season of Flame](object_name)?
+    - Help me locate [The Tristan Betrayal](object_name)
+    - Please pull up [Nothing Feels Good](object_name)
+    - Play [trailer](object_type) of [Do Whatever Turns You On](object_name)
+    - play [Live at Leeds](object_name)
+    - Find [Trust in the Lord - Live Worship with Don Moen](object_name).
+    - Find a [soundtrack](object_type) called [Tied to a Star](object_name).
+
+- intent: SearchScreeningEvent
+  examples: |
+    - What are the [movie times](object_type)
+    - Check the movie timings for [Cracked Nuts](movie_name) at [Southern Theatres](location_name).
+    - What [movies](movie_type) are playing at the [closest](spatial_relation) [movie theatre](object_location_type)
+    - Tell me what [movies](movie_type) are at [AMC Theatres](location_name).
+    - What [animated movies](movie_type) are playing at [Dipson Theatres](location_name)?
+    - find [movie schedules](object_type) for [Dickinson Theatres](location_name)
+    - I need a list of places [in the area](spatial_relation)  that I can see [animated movies](movie_type) [in six minutes](timeRange) 
+    - show [movie times](object_type) in [North American Cinemas](location_name)
+    - find [Death Is Called Engelchen](movie_name) at [Neighborhood Cinema Group](location_name)
+    - find [films](movie_type) at [Magic Johnson Theatres](location_name)
+    - give me the [movie schedule](object_type)
+    - Can i get the showtimes for [Man in Blues](movie_name)?
+    - give me the local [movie times](object_type)
+    - What is the [movie schedule](object_type) [in five minutes](timeRange) for [movies](movie_type) playing [in the neighborhood](spatial_relation) 
+    - Find the [movie times](object_type) for [North American Cinemas](location_name).
+    - What [films](movie_type) are at the [nearest](spatial_relation) [movie theatre](object_location_type)
+    - What are the [movie times](object_type) for [animated movies](movie_type) playing [close by](spatial_relation)
+    - When and where is [Invitation to the Waltz](movie_name) playing 
+    - tell me the [movie schedule](object_type)
+    - find [movie times](object_type) for [movies](movie_type) [in the neighborhood](spatial_relation)
+    - Can you give me the [movie schedule](object_type) for [Amco Entertainment](location_name)?
+    - What time will [Paris by Night](movie_name) aired
+    - find [animated movies](movie_type) [close by](spatial_relation) with a [movie schedule](object_type)
+    - Can i get the showtimes for [films](movie_type) [close by](spatial_relation)?
+    - What is the [movie schedule](object_type) today at [Neighborhood Cinema Group](location_name)?
+    - What time is the closet [cinema](object_location_type) playing [movies](movie_type) the [closest](spatial_relation)
+    - Show me a [movie schedule](object_type).
+    - is [The Singing Nun](movie_name) at [Regal Entertainment Group](location_name)
+    - Show [films](movie_type) at the [nearest](spatial_relation) [cinema](object_location_type)
+    - When is [Old Enough](movie_name) showing at the [movie house](object_location_type)?
+    - Where is the [nearest](spatial_relation) [movie house](object_location_type) that is playing [Sirivantha](movie_name)
+    - Tell me the [closest](spatial_relation) [movie house](object_location_type) playing [Black Rage](movie_name)
+    - Is [The Johnstown Flood](movie_name) playing
+    - Find the [movies](movie_type) and [movie times](object_type) [in the neighbourhood](spatial_relation) 
+    - where can i watch [Wartime Romance](movie_name) in the [morning](timeRange)
+    - find [animated movies](movie_type) [nearby](spatial_relation)
+    - When is [Robotix](movie_name) playing?
+    - Can i get the showtimes for [films](movie_type) [in the area](spatial_relation).
+    - What time is [The Taking of Pelham 1 2 3](movie_name) playing at the [movie theatre](object_location_type)
+    - What are the [movie schedule](object_type) [now](timeRange)
+    - find [Mann Theatres](location_name) [movie schedule](object_type)
+    - When is [Sins of the Fathers](movie_name) playing?
+    - where is [Wild America](movie_name) showing at [zero P.M.](timeRange)
+    - Can you let me know the [films](movie_type) that are on the [movie schedules](object_type) [in the area](spatial_relation) at [noon](timeRange)?
+    - [movie schedules](object_type) of [movies](movie_type) [in the neighbourhood](spatial_relation) at [zero am](timeRange)
+    - what's the [closest](spatial_relation) [movie house](object_location_type) showing [The Hard Way](movie_name)
+    - Find [movie times](object_type).
+    - find [animated movies](movie_type) [close by](spatial_relation) with a [movie schedule](object_type)
+    - Find what [movies](movie_type) are showing at the [nearest](spatial_relation) [movie house](object_location_type)
+    - Find the [schedule](object_type) for [movies](movie_type) at [Plitt Theatres](location_name).
+    - find a [movie house](object_location_type) with [Hollow Reed](movie_name)
+    - Please show me the [movie schedule](object_type) for [movies](movie_type) playing [in the neighborhood](spatial_relation).
+    - list [animated movies](movie_type) at the [nearest](spatial_relation) [cinema](object_location_type)
+    - Give me some [movie schedules](object_type).
+    - What's on the [movie schedules](object_type) at [Amco Entertainment](location_name)?
+    - What time are the [movie schedules](object_type)
+    - What [animated movies](movie_type) are at [Pacific Theatres](location_name)
+    - I'm looking for a [movie schedule](object_type) at the [Cooper Foundation](location_name).
+    - List [movie schedule](object_type)
+    - Show me the [closest](spatial_relation) [movie house](object_location_type) playing [animated movies](movie_type) please.
+    - Find the [movie schedule](object_type).
+    - Does [AMC Theatres](location_name) have [movie schedules](object_type) out?
+    - whats the [movie schedule](object_type) for [movies](movie_type) [nearby](spatial_relation)
+    - I want the [movie schedule](object_type) for [animated movies](movie_type) [in the area](spatial_relation) 
+    - What time is [Beat the Devil](movie_name) coming on at [Mann Theatres](location_name)
+    - Give me the [schedule](object_type) for [Getting There: Sweet 16 and Licensed to Drive](movie_name)
+    - [movie schedule](object_type) at [Speakeasy Theaters](location_name)
+    - What [movie times](object_type) are [around here](spatial_relation) playing [animated movies](movie_type)
+    - Show me the [movie times](object_type)
+    - Where is the [closest](spatial_relation) [cinema](object_location_type) playing [Soapsuds and Sapheads](movie_name)
+    - Let me know what [animated movies](movie_type) are playing [around here](spatial_relation).
+    - What is the [movie schedules](object_type) for the [Harkins Theatres](location_name)
+    - what [film](movie_type) to see at [ArcLight Hollywood](location_name)
+    - Tell me what [movies](movie_type) are showing at [seven am](timeRange) at the [closest](spatial_relation) [movie house](object_location_type).
+    - Show me the [movie schedule](object_type) for [movies](movie_type) [around here](spatial_relation)
+    - What [films](movie_type) and [movie times](object_type) are [close by](spatial_relation)
+    - Find the [schedule](object_type) for [Chronicle of My Mother](movie_name) at the [nearest](spatial_relation) [cinema](object_location_type) [in 1 minute and 8 seconds](timeRange).
+    - What are the [movie times](object_type) for [Amco Entertainment](location_name)
+    - show [animated movie](movie_type) at [Century Theatres](location_name)
+    - What time is [The Bride's Journey](movie_name) playing at [Star Theatres](location_name)?
+    - show me [movie times](object_type) for [Southern Theatres](location_name)
+    - Find the [movie schedule](object_type) for [animated movies](movie_type) [in the area](spatial_relation).
+    - find the [closest](spatial_relation) [movie theatre](object_location_type) with [films](movie_type)
+    - Show the [movie times](object_type)
+    - Can i get the showtimes for [films](movie_type) at [Dickinson Theatres](location_name)?
+    - find [Kerasotes Theatres](location_name) [movie schedules](object_type)
+    - Show me the [animated movies](movie_type) starting at [10:56:18 a.m.](timeRange) at the [nearest](spatial_relation) [movie house](object_location_type)
+    - What [animated movies](movie_type) are playing [nearby](spatial_relation)?
+    - What time is [High Schools](movie_name) playing
+    - I'd like to see [movie times](object_type) at [Santikos Theatres](location_name)
+    - I'd like to watch [Apocalypse 2024](movie_name)
+    - I need [movie times](object_type) at [Fox Theatres](location_name) around [zero PM](timeRange)
+    - find [movie times](object_type) at [National Amusements](location_name)
+    - What time is [Sontha Ooru](movie_name) playing
+    - what [animated movies](movie_type) are at [Fox Theatres](location_name)
+    - Find the [movie times](object_type) for [movies](movie_type) playing [in the neighborhood](spatial_relation)
+    - What is the [7 A.M.](timeRange) [movie schedules](object_type) at [Amco Entertainment](location_name)
+    - What [films](movie_type) are showing at [National Amusements](location_name)
+    - I'd like to watch [A Storm in the Stars](movie_name) at [North American Cinemas](location_name)
+    - Give me the showtimes for [Sign of the Anchor](movie_name).
+    - When will [The Honor of an Outlaw](movie_name) be showing?
+    - For the [Star Theatres](location_name) is [The Belles of St. Clements](movie_name) playing [in 8 minutes](timeRange) 
+    - find a [movie theatre](object_location_type) with [Life and Death](movie_name)
+    - Where is the [closest](spatial_relation) [cinema](object_location_type) playing [A Drink in the Passage](movie_name)
+    - find [Lost in Space](movie_name)
+    - Find the [movie schedule](object_type).
+    - show [movie times](object_type) for [AMC Theatres](location_name)
+    - What time is [The Brat](movie_name) playing at the [movie house](object_location_type)?
+    - Please tell me [movie times](object_type)
+    - [movie times](object_type) at [Warren Theatres](location_name)
+    - please give me the [movie schedule](object_type)
+    - Find the [movie schedules](object_type) for [animated movies](movie_type) [nearby](spatial_relation) at [09:44 am](timeRange).
+    - fimd [films](movie_type) [around here](spatial_relation)
+    - What is the [movie schedule](object_type) for [animated movies](movie_type) playing [in the neighborhood](spatial_relation)?
+    - could you please show me [movie schedules](object_type)
+    - I need to see a list of [films](movie_type) and [movie times](object_type) [in the area](spatial_relation) 
+    - When is [Heat](movie_name) playing near me?
+    - Find the [movie schedules](object_type) for [Great Escape Theatres](location_name).
+    - What is the [movie schedule](object_type) [1 second from now](timeRange)
+    - find a [cinema](object_location_type) for [The Tenderfoot](movie_name) [nearest](spatial_relation) me
+    - Let me see the movie [schedule](object_type) for [Seed of Chucky](movie_name)
+    - Where can I find [movie schedules](object_type)
+    - Can I get the [movie schedules](object_type)  for [Loews Cineplex](location_name) [in six hours seventeen minutes and eighteen seconds](timeRange).
+    - I need to know what [theatre](object_location_type) is playing [A Happy Coersion](movie_name)
+    - Where is [Mother and Child](movie_name) plkaying
+    - show [movie schedules](object_type) [close by](spatial_relation) [movies](movie_type)
+    - Can you let me know when [Talk of the Devil](movie_name) is playing at the [movie theatre](object_location_type)?
+    - what [movie theatre](object_location_type) is showing [Manorama Six Feet Under](movie_name)
+    - What time will the [closest](spatial_relation) [movie house](object_location_type) be playing [Mark Shoots First](movie_name)
+    - Where can I see [The Somme](movie_name) starting at [16:01:04](timeRange)?
+    - Can I get [The Marine 2](movie_name) showtimes.
+    - Find the [movie schedule](object_type) for [National Amusements](location_name).
+    - Find the [schedule](object_type) for [movies](movie_type) at [Star Theatres](location_name).
+    - Is [Jack the Ripper](movie_name) playing [in one hour](timeRange) at the [nearest](spatial_relation) [movie house](object_location_type)?
+    - [movie schedule](object_type) for [Harkins Theatres](location_name)
+    - show [movie times](object_type)
+    - List [movie schedule](object_type).
+    - show the [movie schedules](object_type)
+    - What is the [movie schedule](object_type) for [movies](movie_type) [in the neighbourhood](spatial_relation) 
+    - find the [closest](spatial_relation) [movie theatre](object_location_type) with [animated movies](movie_type)
+    - Which [films](movie_type) are playing at the [closest](spatial_relation) [cinema](object_location_type)?
+    - where can i see [animated movies](movie_type) [in the neighborhood](spatial_relation) 
+    - Find the schedule for for [Corn](movie_name) at [eleven A.M.](timeRange) at [Loews Cineplex Entertainment](location_name).
+    - I'd like to watch [movies](movie_type) at the [closest](spatial_relation) [movie theatre](object_location_type)
+    - Find the [schedule](object_type) for [Metallica Through the Never](movie_name).
+    - When is [The Blood of Others](movie_name) playing?
+    - Can you bring up the [movie schedule](object_type) for [ArcLight Hollywood](location_name)?
+    - What time is [cinema](object_location_type) playing [The Village Priest](movie_name)?
+    - find [Un weekend da bamboccioni](movie_name)
+    - What [movies](movie_type) are playing at [Warren Theatres](location_name)?
+    - what time is [The Dungeonmaster](movie_name) playing at [AMC Theaters](location_name)
+    - Where is [Project A Part II](movie_name) playing?
+    - find [The Broken](movie_name)
+    - I would like to see the [closest](spatial_relation) [cinema](object_location_type) playing [films](movie_type).
+    - find [A Feather in Her Hat](movie_name) at [Magic Johnson Theatres](location_name)
+    - List [movie times](object_type) at [Cinemark Theatres](location_name)
+    - Is [The Mystery of Betty Bonn](movie_name) playing at [twelve A.M.](timeRange) at the [nearest](spatial_relation) [movie house](object_location_type)?
+    - List [movie schedule](object_type)
+    - What is the [movie schedule](object_type) at [Caribbean Cinemas](location_name)
+    - Find the [schedule](object_type) for [Brick](movie_name).
+    - When is [Fine, Totally Fine](movie_name) playing?
+    - What [cinema](object_location_type) is showing [Ice Station Zebra](movie_name) at [07:25 P.M.](timeRange)?
+    - What time is [The Crystal Gazer](movie_name) playing at the [closest](spatial_relation) [cinema](object_location_type)?
+    - I'd like to watch [movies](movie_type) [close by](spatial_relation)
+    - What time is [Soul Surfer](movie_name) playing
+    - What is the [nearest](spatial_relation) [movie theatre](object_location_type) playing [Kate y Leopold](movie_name)?
+    - When is [Em4Jay](movie_name) playing at the [movie theatre](object_location_type)?
+    - What [film](movie_type) is playing at [Landmark Theatres](location_name)
+    - Show [movie schedules](object_type) for [Douglas Theatre Company](location_name)
+    - show me the [schedule](object_type) of [Letters from a Porcupine](movie_name) in [Alamo Drafthouse Cinema](location_name)
+    - Tell me what [movies](movie_type) are playing [in the neighborhood](spatial_relation)
+    - Find the [schedule](object_type) for [Better This World](movie_name) at a [movie house](object_location_type).
+    - Find [movies](movie_type) playing at the [closest](spatial_relation) [movie theatre](object_location_type)
+    - What time is [Hitman City](movie_name) playing
+    - Where can I see [Young Goethe in Love](movie_name)?
+    - what [films](movie_type) are showing [nearby](spatial_relation)
+    - Find the [schedule](object_type) for [movies](movie_type) at [Harkins Theatres](location_name).
+    - what [films](movie_type) are showing at [Century Theatres](location_name)
+    - Can I watch [The Sound of War](movie_name) [in thirteen minutes](timeRange) at the [nearest](spatial_relation) [cinema](object_location_type)
+    - [movie schedule](object_type)  of [films](movie_type) [around here](spatial_relation)
+    - Is the [film](movie_type) [Goodrich Quality Theaters](location_name) playing at [12:26 AM](timeRange)?
+    - I'm looking for [movie schedule](object_type) for [films](movie_type) playing [in the neighborhood](spatial_relation).
+    - I'd like to watch [movies](movie_type) at the [nearest](spatial_relation) [movie house](object_location_type)
+    - show [movie schedules](object_type)
+    - find [Partners in Action](movie_name) at [Dickinson Theatres](location_name)
+    - Can i get todays [movie schedule](object_type) for the [movies](movie_type) that are [close by](spatial_relation)?
+    - Can I see the [movie schedules](object_type)?
+    - find [Italy Has Awakened](movie_name) at a [Goodrich Quality Theaters](location_name)
+    - Where is the [closest](spatial_relation) [movie house](object_location_type) that's playing [The Mark](movie_name)?
+    - what's the [nearest](spatial_relation) [movie theatre](object_location_type) showing [movies](movie_type)
+    - find [movie schedules](object_type) at [Loews Cineplex Entertainment](location_name)
+    - show [movie schedules](object_type) for [Fox Theatres](location_name)
+    - What are the [movie schedules](object_type) for [movies](movie_type) playing [in the neighborhood](spatial_relation) 
+    - Find [movie schedules](object_type).
+    - What time is [See Grace Fly](movie_name) playing at [Cineplex Odeon Corporation](location_name)
+    - When can I watch [Prince Daewon](movie_name) at [movie house](object_location_type)?
+    - Can I get the newest listings for [movies](movie_type) at [Harkins Theatres](location_name)
+    - What is the [films](movie_type) with [movie times](object_type) [in the area](spatial_relation)
+    - Can I get the showtimes for [films](movie_type) at [Malco Theatres](location_name).
+    - Fine the [movie schedule](object_type) for [Warren Theatres](location_name).

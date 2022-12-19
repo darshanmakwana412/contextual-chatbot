@@ -1,0 +1,163 @@
+version: "3.1"
+
+nlu:
+- intent: AddToPlaylist
+  examples: |
+    - I want to add this [bon scott](artist) [song](music_item) to [my](playlist_owner) [Post-grunge](playlist) list
+    - Add this [artist](music_item) to [my](playlist_owner) [Post-grunge](playlist) playlist
+    - add [Kisaki](artist) to [Family Road Trip](playlist) playlist
+    - add [tune](music_item) to [my](playlist_owner) playlist [eletro br](playlist)
+    - The [trapaholics](playlist) needs another [artist](music_item) added. 
+    - please put this [artist](music_item) into [my](playlist_owner) [Lo mejor de Radio 3](playlist) playlist
+    - [Love In Paris](playlist) needs some [frank farian](artist) in the playlist. 
+    - Add [Fear and Bullets](entity_name) to [my](playlist_owner) [Chill Tracks](playlist) playlist. 
+    - add the [tune](music_item) to [my](playlist_owner) [jazz vibes](playlist) playlist
+    - Please put another [tune](music_item) into the [laundry](playlist) playlist. 
+    - I want a [song](music_item) by [john schlitt](artist) in the [bajo las estrellas](playlist) playlist. 
+    - put [Sarah Blasko](artist) onto [my](playlist_owner) [The MetalSucks Playlist](playlist) 
+    - add [gina schock](artist) to [workout twerkout](playlist)
+    - Add a [song](music_item) from [Randy Rhoads](artist) to [my](playlist_owner) [50 Clasicos](playlist) playlist
+    - [my](playlist_owner) [timeless love songs](playlist) playlist should include [viderunt omnes](entity_name)
+    - Add [Heart Like a Hurricane](entity_name) to [digster soul classics](playlist)
+    - add [tune](music_item) [this is puccini](playlist) to [my](playlist_owner) playlist
+    - Add this [Alan Wilson](artist) [track](music_item) to [my](playlist_owner) [This Is Luis Fonsi](playlist) playlist
+    - add [harry chapin](artist) in [stress relief](playlist) playlist
+    - put [Unbound](entity_name) into [found them first](playlist) for me
+
+- intent: BookRestaurant
+  examples: |
+    - In [eight years and a half from now](timeRange) I'd like a reservation at a [top-rated](sort) [bar](restaurant_type)
+    - I need a table in the state of [LA](state) for [katina and josefina gray](party_size_description)
+    - book me a [restaurant](restaurant_type) at [Sint Maarten](country) on [sun](timeRange).
+    - Make a reservation for [eunice thompson and elisa martin](party_size_description) in the [Virgin Islands](state) [in one minute](timeRange).
+    - book me a [restaurant](restaurant_type) in the [Northern Mariana Islands](state)
+    - I want to find a [highly rated](sort) [delicatessen](restaurant_type) in [Childersburg](city), [DE](state) for [one](party_size_number) [next February](timeRange)
+    - book a [joint](restaurant_type) for [Feb. the seventh](timeRange) in [Oklahoma](state) [within walking distance](spatial_relation) for [six](party_size_number) that is [highly rated](sort)
+    - book a [restaurant](restaurant_type) for [4](party_size_number) that's [not far](spatial_relation) from [CA](state)
+    - Can you get me a reservation at [WWE The World](restaurant_name) [around](spatial_relation) [Av U](poi)
+    - Book reservations at [Phase 1](restaurant_name) in [La Jara](city)
+    - I want to go to [Antigua and Barbuda](country) and eat at a table for [4](party_size_number).
+    - Book the [Coon Chicken Inn](restaurant_name) in [Baker City](city) for [4](party_size_number) people.
+    - Book a [restaurant](restaurant_type) [in town](poi) [not far](spatial_relation) from here for [me and my mother in law](party_size_description).
+    - Book a [maharashtrian](cuisine) [restaurant](restaurant_type) please.
+    - I'd like to eat at an [internet](facility) [restaurant](restaurant_type) with a party of [four](party_size_number)
+    - Book a [restaurant](restaurant_type) for [ten](party_size_number) in [Exmore](city) at [sunset](timeRange)
+    - I need a reservation for [apr. the sixteenth, 2027](timeRange) in [Cazenovia](city), [CA](state)
+    - book a spot at [The Red Onion](restaurant_name) in [San Marino](country) for [next week](timeRange)
+    - Find me a table at a [javanese](cuisine) [brasserie](restaurant_type)
+    - Can you get me reservations for a [highly rated](sort) [restaurant](restaurant_type) in [Seychelles](country)
+
+- intent: GetWeather
+  examples: |
+    - What is the forecast in [Kearneysville](city)
+    - Will there be [rainfall](condition_description) [four weeks from now](timeRange) in [Tehama](city) [Bahamas](country)
+    - Weather for [East Peru](city) [Bolivia](country) [3 years and a half from now](timeRange)
+    - Will it get [warmer](condition_temperature) by [5 am](timeRange) in [Washington](state)?
+    - Is it [warmer](condition_temperature) in [Monson](city), [U.S. Minor Outlying Islands](country)
+    - What will the weather be in [Stelvio National Park](geographic_poi) [1 hour and 1 minute from now](timeRange)?
+    - How is the weather [far](spatial_relation) from my [current place](current_location) [in 42 weeks](timeRange)?
+    - What is the predicted weather on [mar. 27](timeRange) for [Farragut State Park](geographic_poi)?
+    - Will it be [sunny](condition_description) in [Spain](country) on [3/26/2023](timeRange)?
+    - What's the weather in [Mayotte](country)
+    - What is the weather in [Lloyd](city) [Equatorial Guinea](country)
+    - Is it [overcast](condition_description) in [Ziwa Rhino Sanctuary](geographic_poi)?
+    - forecast for [Willits](city) [Christmas Island](country) [twenty three minutes from now](timeRange)
+    - Will there be a [snowstorm](condition_description) this [weekend](timeRange) in [Bear River](city), [Arizona](state)
+    - Weather for [this Winter](timeRange) [here](current_location)
+    - Is it going to be [freezing](condition_temperature) [in one hour](timeRange) in [Puerto Rico](country)
+    - Will there be [snowfall](condition_description) in [Coxs Mills](city) [Vatican](country)?
+    - Is the forecast [stormy](condition_description) this [afternoon](timeRange) in [Maryland](state)?
+    - Weather [here](current_location) at [two pm](timeRange)
+    - How will the weather be [in six minutes](timeRange) [close](spatial_relation) to [Moosic](city)
+
+- intent: PlayMusic
+  examples: |
+    - Play play [Lodge](album) by [Alkabli](artist) on [lastfm](service) .
+    - Play some [2011](year) music by [Dan Healy](artist).
+    - Would you please play me a [symphony](music_item) from [1995](year)
+    - Play [One Good Reason](track) by [Tommy Flanagan](artist) on [Itunes](service)
+    - play [Shake Your Head](track)
+    - Play some [Mark Tremonti](artist) from the [thirties](year).
+    - play [Chance Of A Lifetime](track) on [Zvooq](service)
+    - Play any [nineties](year) music
+    - Play music by [Damien Rice](artist)
+    - play the [newest](sort) [ep](music_item) from the [sixties](year)
+    - Play a [melody](music_item) from [Leigh Nash](artist) using [Lastfm](service)
+    - Play [Night Electric Night](album) on [Iheart](service)
+    - play [Innovations](album) by [Kokia](artist)
+    - Play [Pease Porridge Hot](track) by [Johnny Vicious](artist) on [Zvooq](service)
+    - Play the [latest](sort) songs by [Larry Gatlin](artist) on [Iheart](service)
+    - play [my tribute](track) by [Billy Cox](artist)
+    - play anything from [1970](year)
+    - play [Darude](artist)
+    - Play [Dancing Through Life](track) by [Ronald Isley](artist) on [spotify](service)
+    - Play [thirties](year) on [Lastfm](service)
+
+- intent: RateBook
+  examples: |
+    - rate [The Braindead Megaphone](object_name) [series](object_part_of_series_type) [zero](rating_value) out of [6](best_rating) [points](rating_unit)
+    - rate the [current](object_select) [book](object_type) [three](rating_value) [stars](rating_unit)
+    - Rate the [previous](object_select) [essay](object_type) [5](rating_value) out of [6](best_rating)
+    - I am giving this [current](object_select) [book](object_type) under the [series](object_part_of_series_type) section [one](rating_value) [stars](rating_unit)
+    - The horrible [book](object_type) [The Black Gryphon](object_name) only gets [2](rating_value) out of [6](best_rating).
+    - I give the [following](object_select) [saga](object_part_of_series_type) a [5](rating_value).
+    - Give [The Snows of Kilimanjaro](object_name) [3](rating_value) [stars](rating_unit).
+    - rate [Heath Ledger: His Beautiful Life and Mysterious Death](object_name) [1](rating_value) [stars](rating_unit)
+    - Give the [current](object_select) [textbook](object_type) [five](rating_value) [stars](rating_unit).
+    - I rate [Egg Collecting and Bird Life of Australia](object_name) a [zero](rating_value) out of [6](best_rating) [points](rating_unit)
+    - give [5](rating_value) out of [6](best_rating) [points](rating_unit) to [Racing the Rain](object_name)
+    - Rate [this](object_select)  [textbook](object_type) [2](rating_value) of [6](best_rating) [stars](rating_unit)
+    - Rate the [current](object_select) [novel](object_type) [5](rating_value) of [6](best_rating) [points](rating_unit)
+    - rate [this](object_select) [novel](object_type) [zero](rating_value) out of [6](best_rating)
+    - give [0](rating_value) out of [6](best_rating) to [War of the Spider Queen](object_name) [saga](object_part_of_series_type)
+    - I give [The Road from Elephant Pass](object_name) [four](rating_value) [stars](rating_unit)
+    - Rate [Religion and Dharma](object_name) [saga](object_part_of_series_type) [1](rating_value) [points](rating_unit)
+    - rate [this](object_select) [novel](object_type) [four](rating_value) [stars](rating_unit)
+    - I give [The Alchemyst: The Secrets of the Immortal Nicholas Flamel](object_name) [2](rating_value) out of [6](best_rating) [stars](rating_unit).
+    - give [four](rating_value) out of [6](best_rating) rating to [The Cattle King](object_name)
+
+- intent: SearchCreativeWork
+  examples: |
+    - I want to see the [MAXIMUM TRANCE](object_name) [picture](object_type)
+    - I want to see the [book](object_type), [The Mailroom: Hollywood History from the Bottom Up](object_name)
+    - Where is the creative work [Seven Pillars of Wisdom](object_name)?
+    - Find a [video game](object_type) called [Family Dog](object_name).
+    - Find a [game](object_type) called [An Aerial Joy Ride](object_name).
+    - Look for [Every Little Crook and Nanny](object_name)
+    - Go to [The Devil in the Deal:50 Secrets to Successful Dealmaking](object_name)
+    - Find a [soundtrack](object_type) called [Tied to a Star](object_name).
+    - I want to listen to the [Music of Ghost in the Shell: Stand Alone Complex](object_name)
+    - Find the [game](object_type) [BlogBridge](object_name)
+    - I am looking for a creative work called [Something Warm](object_name)
+    - Where can I view the [photograph](object_type) of [Johnny Cool](object_name)
+    - Can you please find me [D.R.E.A.M.](object_name)?
+    - find the [painting](object_type) [The Adventures of Teddy Ruxpin](object_name)
+    - I'd like to see [Level Headed](object_name) 
+    - Where can I buy the [soundtrack](object_type) [Bridge of Souls](object_name)
+    - Play [Nightbirds on Nantucket](object_name) [soundtrack](object_type)
+    - Please look up [The 4-Hour Workweek](object_name) [saga](object_type)
+    - I want to watch the [movie](object_type) [X Window Display Manager](object_name)
+    - find [The Inspector](object_name) for me
+
+- intent: SearchScreeningEvent
+  examples: |
+    - Find the [schedule](object_type) for [No Time to Be Young](movie_name) at [AMC Theaters](location_name).
+    - is [Tomorrow at Dawn](movie_name) at [Harkins Theatres](location_name)
+    - Can I get the newest [movie schedule](object_type) [in the area](spatial_relation)  for [animated movies](movie_type)?
+    - find [Brandy in the Wilderness](movie_name)
+    - What time is [The Queen of Moulin Rouge](movie_name) playing?
+    - What [films](movie_type) are showing at [three o'clock](timeRange) at the [Neighborhood Cinema Group](location_name)?
+    - what time is [The World According to John Coltrane](movie_name) playing
+    - Show me the [movie schedule](object_type) for [movies](movie_type) [around here](spatial_relation)
+    - Give me the [schedule](object_type) for [animated movies](movie_type) at the [nearest](spatial_relation) [cinema](object_location_type)
+    - What [animated movies](movie_type) are [in the neighbourhood](spatial_relation) 
+    - find a [movie house](object_location_type) [closest](spatial_relation) with [animated movies](movie_type)
+    - Show me [movie schedules](object_type) for today.
+    - What time is [Phera](movie_name) playing
+    - whats the [closest](spatial_relation) [movie theatre](object_location_type) showing [animated movies](movie_type)
+    - show [movie times](object_type) at [sunrise](timeRange)
+    - Can i get the showtimes for [films](movie_type) [close by](spatial_relation)?
+    - Can I get showtimes for [films](movie_type) [in the neighborhood](spatial_relation).
+    - What time is [The Riders of the Whistling Skull](movie_name) playing at [Magic Johnson Theatres](location_name)
+    - Find time for [films](movie_type) at the [North American Cinemas](location_name)
+    - Showtimes for [animated movies](movie_type) [in the area](spatial_relation).

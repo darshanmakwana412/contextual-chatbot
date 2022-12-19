@@ -1,0 +1,5 @@
+Dataset for NLU training :
+https://www.kaggle.com/datasets/joydeb28/nlp-benchmarking-data-for-intent-and-entity
+
+Dataset for Dialogue Management training :
+https://github.com/budzianowski/multiwoz
