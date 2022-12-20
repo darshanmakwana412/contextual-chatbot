@@ -2,7 +2,11 @@ recipe: default.v1
 
 language: en
 pipeline:
-- name: WhitespaceTokenizer
+- name: SpacyNLP
+  model: en_core_web_md
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
 - name: CRFEntityExtractor
 - name: CountVectorsFeaturizer
   OOV_token: oov

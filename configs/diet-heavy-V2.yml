@@ -6,17 +6,16 @@ pipeline:
 - name: LanguageModelFeaturizer
   model_weights: "bert-base-uncased"
   model_name: "bert"
-# - name: LanguageModelFeaturizer
+- name: CRFEntityExtractor
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+  token_pattern: (?u)\b\w+\b
 - name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
-- name: CountVectorsFeaturizer
-  OOV_token: oov
-  token_pattern: (?u)\b\w+\b
 - name: DIETClassifier
   epochs: 100
-  entity_recognition: False
   num_transformer_layers: 4
   transformer_size: 256
   use_masked_language_model: True
@@ -26,4 +25,3 @@ pipeline:
   embedding_dimension: 30
   hidden_layer_sizes:
     text: [512, 128]
-- name: CRFEntityExtractor
